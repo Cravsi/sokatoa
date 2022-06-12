@@ -1,108 +1,384 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<p align="center"><img src="docs/features/readme-head.png"></p>
 
-Welcome USER_NAME,
+# Sokatoa
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+For my **Portfolio Project 2** on **Code Institute's 5 Project Course** I have created this fun and informational website focused on teaching student's some foundational trigonometic principles. The site includes useful notes and quizes to reinforce the student's learning
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+Link to deployed [site](https://cravsi.github.io/...../).
 
-## Gitpod Reminders
+<figure>
+    <img src="" alt="">
+</figure>
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Table of Contents
+- [Sokatoa](#sokatoa)
+  * [Table of Contents](#table-of-contents)
+  * [Project Goals](#project-goals)
+    + [User Goals](#user-goals)
+    + [Site Owner Goals](#site-owner-goals)
+  * [User Experience](#user-experience)
+    + [Target Audience](#target-audience)
+    + [User Requirements and Expectations](#user-requirements-and-expectations)
+    + [User Stories](#user-stories)
+  * [Design](#design)
+    + [Design Choice](#design-choice)
+    + [Colour Palette](#colour-palette)
+    + [Fonts](#fonts)
+    + [Structure](#structure)
+    + [Wireframes](#wireframes)
+  * [Technologies](#technologies)
+    + [Langauges](#langauges)
+    + [Frameworks & Tools](#frameworks---tools)
+  * [Features](#features)
+    + [Logo and Navigation Bar](#logo-and-navigation-bar)
+    + [Footer](#footer)
+    + [Hero-Image](#hero-image)
+    + [Blurb](#blurb)
+    + [Performances](#performances)
+    + [Functions](#functions)
+    + [Player Information](#player-information)
+    + [Contact Form](#contact-form)
+    + [Gallery](#gallery)
+  * [Testing](#testing)
+    + [HTML Validation](#html-validation)
+    + [CSS Validation](#css-validation)
+    + [Accessibility](#accessibility)
+    + [Performance](#performance)
+    + [Device Testing](#device-testing)
+    + [Browser Compatibility](#browser-compatibility)
+    + [Testing User Stories](#testing-user-stories)
+  * [Bugs](#bugs)
+  * [Deployment](#deployment)
+    + [Site Deployment](#site-deployment)
+    + [Version Control](#version-control)
+  * [Credits](#credits)
+## Project Goals
+### User Goals
+- 
+<br>
 
-`python3 -m http.server`
+### Site Owner Goals
+- 
+<br>
 
-A blue button should appear to click: _Make Public_,
+## User Experience
 
-Another blue button should appear to click: _Open Browser_.
+### Target Audience
+- 
+<br>
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### User Requirements and Expectations
+- 
+<br>
 
-A blue button should appear to click: _Make Public_,
+### User Stories
 
-Another blue button should appear to click: _Open Browser_.
+#### First-Time User
+1. 
+<br>
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+#### Returning User
+6. 
+<br>
 
-To log into the Heroku toolbelt CLI:
+#### Site Owner
+10. 
+<br>
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Design
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Design Choice
+This webpage has been designed to be visually interesting and provide the readers the information required for them to feel they know enough about ......
+<br>
 
-------
+### Colour Palette
+The chosen colour palette was appears .......
+<br>
+......
+<figure>
+    <img src="g" alt="">
+    <figcaption>The colour palette used for the website</figcaption>
+</figure>
+<br>
 
-## Release History
+### Fonts
+The *Oswald* font was used for headings.
+<br>
+The *Open Sans* font was used for bodies of text as it is considered complimentary to *Oswald*.
+<br>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Structure
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+<br>
+The site is spread across one page with multiple sections:
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- An home section which includes a hero-image, a short descriptive blurb and a performance section.
+- An about section which contains information on the events the quartet accommodates and information on wach of the players.
+- A gallery section containing images of the quartet.
+- A contact section to allow the user to quickly get in contact with the quartet.
+<br>
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Wireframes
+<details><summary> <b>One-Page Layout</b> </summary>
+    <figure>
+        <img src="docs/wireframes/final.png"
+            alt="A wireframe for the home page">
+        <figcaption>A wireframe for the one-page layout on mobile, tablet & browser</figcaption>
+    </figure>
+</details>
+<br>
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+## Technologies
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Langauges
+ - CSS
+ - HTML
+ <br>
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Frameworks & Tools
+- [Git](https://git-scm.com/) 
+- [GitHub](https://github.com/Cravsi/)
+- [GitPod](https://www.gitpod.io/)
+- [Balsamiq](https://balsamiq.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [Awesome Fonts](https://fontawesome.com/)
+- [Pexels](https://www.pexels.com/)
+- [Unsplash](https://unsplash.com/)
+- [TinyPNG](https://tinypng.com/)
+- [Convertio](https://convertio.co/jpg-webp/)
+<br>
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Features
+This website consists of .... page, with .... sections:
+<br>
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Logo and Navigation Bar
+ - The logo and name are displayed to confirm the user is on the correct site.
+ - A nav-bar is provided for quick navigation throughout the website.
+ - The current webpage is highlighted within the nav-bar.
+<figure>
+    <img src="docs/features/feature-header.png" alt="Website Header">
+</figure>
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Footer
+- Three sections: Social Media Link, Contact Information, A logo linking back to the home section.
+<figure>
+    <img src="docs/features/feature-footer.png" alt="Website Footer">
+</figure>
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Hero-Image
+- Introduces the user to the quartet.
+<figure>
+    <img src="docs/features/feature-hero-image.png" alt="the string quartet">
+</figure>
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Blurb
+- Provides some general background information on the quartet.
+<figure>
+    <img src="docs/features/feature-blurb.png" alt="the blurb">
+</figure>
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Performances
+- Displays some past performances by the band to the users.
+<figure>
+    <img src="docs/features/feature-performance.png" alt="past performances">
+</figure>
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Functions
+- Describes to the user the type of events the quartet plays for.
+- Provides reviews from previous patrons for each event type.
+<figure>
+    <img src="docs/features/feature-functions.png" alt="Corporate Function">
+</figure>
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Future Features
 
-------
+<br>
 
-## FAQ about the uptime script
+## Testing
+### HTML Validation
+The W3C validation service was used to validate the html of the webpage. No errors were detected.
+<details><summary>HTML Validation</summary>
+    <figure>
+        <img src=""
+            alt="Webpage HTML validation">
+    </figure>
+</details>
+<br>
 
-**Why have you added this script?**
+### CSS Validation
+The W3C Jigsaw CSS validation service is used to validate the sites CSS styling. No errors were found.
+<details><summary>CSS Validation</summary>
+    <figure>
+        <img src=""
+            alt="Webpage CSS validation">
+    </figure>
+</details>
+<br>
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Accessibility
+The WAVE WebAIM web accessibility evaluation tool is used to ensure each page is highly accessible.
+<details><summary>Accessibility</summary>
+    <figure>
+        <img src=""
+            alt="Webpage Accessibility">
+    </figure>
+</details>
+<br>
 
-**How will this affect me?**
+### Performance
+Google Lighthouse, found in Google Chrome Dev tools was used to test the performance of the site.
+<details><summary>Lighthouse Desktop Performance</summary>
+    <figure>
+        <img src=""
+            alt="Desktop Performance">
+    </figure>
+</details>
+<details><summary>Lighthouse Mobile Performance</summary>
+    <figure>
+        <img src=""
+            alt="Mobile Performance">
+    </figure>
+</details>
+<br>
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Local Testing
+- Logo
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+- Header & Navigation Bar
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+- Blurb
+.
+- Information Section 
 
-**So….?**
+- Gallery
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+- Contact Form
 
-**Can I opt out?**
+- Footer
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+<details><summary>Fixes after local testing.</summary>
 
-**Anything more?**
+| **Bug** | **Fix** |
+| ----------- | ----------- |
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
----
 
-Happy coding!
+</details>
+<br>
+
+### Device Testing
+In addition to various devices resolutions being testing through the **Responsive Design Mode** tool in Mozilla Firefox the following devices were used to test the site:
+- Moto G8           [720x1560px]
+
+The website performed well on all these devices. No unexpected errors were found and responsiveness was good.
+<br>
+
+### Browser Compatibility
+The following devicese were used to test the site:
+- Mozilla Firefox   v100.0. .....
+- Google Chrome     v101.0. ....
+- Microsoft Edge    v100.0. ....
+The website performed well on all these browsers. No unexpected errors were found and responsiveness was good.
+<br>
+
+### Testing User Stories
+- 1. As a first-time user, ....
+
+<br>
+
+| **Feature** | **Action** | **Expected Result** | **Result** |
+| ----- | ----- | ----- | ----- |
+
+<details><summary>Screenshots</summary>
+    <figure>
+        <img src=""
+            alt="">
+    </figure>
+    <figure>
+        <img src=""
+            alt="">
+    </figure>
+</details>
+<br>
+
+<br>
+
+## Bugs
+| **Bug** | **Fix** |
+| ----------- | ----------- |
+
+<br>
+
+## Deployment
+### Site Deployment
+The site was deployed using Github Pages using the following steps:
+ 1. In the github repository open repository **settings**.
+ 2. In setting open **pages** tab.
+ 3. Select branch **main** as source.
+ 4. **Save** selection to deploy the site.
+ 5. Open the deployed site using the link provided on the screen.
+<details><summary>Steps to deploy site on Github Pages</summary>
+    <figure>
+        <img src="docs/features/readme-deployment.png"
+            alt="Guide to site deployment">
+    </figure>
+</details>
+<br>
+
+### Version Control
+#### Git and Github
+Repository created on Github. 
+Method:
+- Create new public repository on Gitpod using the CodeInstitiute template.
+- Open a Gitpod workspace.
+- Create required folders and documents.
+- Project was previewed using the liveserver port on a the Firefox browser.
+- Work was continuosly saved and committed using the following git commands:
+    - **git add .** to stage changes to git.
+    - **git commit -m** to commit changes
+    - **git push** to push changes to Github repo.
+<br>
+
+#### Fork
+A copy of the original repository can be created by forking it. This will allow changes to be made to the cloned repo without it affecting the original.
+
+1. From within the repo you want to fork click the **fork** button.
+2. Input the name and description of your cloned repo and click the **Create fork** button.
+<details><summary>Steps to fork a repository</summary>
+    <figure>
+        <img src="docs/features/readme-fork.png"
+            alt="Guide to forking a repository">
+    </figure>
+</details>
+<br>
+
+#### Clone
+Cloning a repo allows you to make local changes to the repository before committing and pushing them to the remote.
+
+1. From within the repo you want to clone click the dropdown **Code** button.
+2. Click on the clipboard icon to copy the URL.
+3. In Git Bash, navigate to the working directory you want to place the clone.
+4. Type `git clone` followed by the copied URL.
+5. Press `Enter` and the clone will be created. 
+<details><summary>Steps to clone a repository</summary>
+    <figure>
+        <img src="docs/features/readme-clone.png"
+            alt="Guide to cloning a repository">
+    </figure>
+</details>
+<br>
+
+## Credits
+
+### Images
+
+<br>
+
+### Code
+- The button hover animations for the menu buttons and logo buttons taken from <a href="https://github.com/IanLunn/Hover">Hover</a> by <a href="https://github.com/IanLunn">Ian Lunn</a> on GitHub.
+<br>
+
+## Acknowledgements
+I would like to thank my mentor Simen Dehlin for his mentorship throughout the project and Chris Quinn for pointing out the last few things and helping me get this first project over the line. I would also like to thank Mo and Mike Sheehan, the cohort mentor and facilitator for helping out wherever I had any questions. Lastly, thanks to all my friends and family who were happy to help out with the device testing.

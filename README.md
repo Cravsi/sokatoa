@@ -54,35 +54,47 @@ Link to deployed [site](https://cravsi.github.io/...../).
   * [Credits](#credits)
 ## Project Goals
 ### User Goals
-- 
+- Learn what trigonometric functions are.
+- Learn how to apply the work in maths problems.
+- Memorise the three main trig functions with a simple memnomic device.
 <br>
 
 ### Site Owner Goals
-- 
+- Teach site users about trig functions and how to use them
+- Ensure site users remember the different functions after they leave the site.
 <br>
 
 ## User Experience
 
 ### Target Audience
-- 
+- Those learning the basics of trigonometry
+- Those studying for junior cycle maths exams.
+- People looking for a simple way to memorise the trig functions.
 <br>
 
 ### User Requirements and Expectations
-- 
+- A simple and intuitive site design.
+- A short descriptive section to teach the basics of trigonometric functions.
+- Fun and easy game to help reinforce what they have just learnt.
+- A functional site that can scale to all screen sizes.
+- Accessibilty
+- A means of leaving feedback.
 <br>
 
 ### User Stories
 
-#### First-Time User
-1. 
-<br>
-
-#### Returning User
-6. 
+#### User
+1. As a user, I want to learn the basics of trigonometric functions.
+2. As a user, I want to test my knowledge of trigonometric functions.
+3. As a user, I want to see how many correct/incorrect questions I've scored.
+4. As a user, when I answer incorrectly I want to know what the correct answer is.
+5. As a user, I want to answer questions with both my keyboard and/or mouse.
+6. As a user, I want to provide feedback to the site. 
 <br>
 
 #### Site Owner
-10. 
+7. As the site owner, I want users to be able to find me on social media.
+8. As the site owner, I want to gather feedback from the user.
 <br>
 
 ## Design

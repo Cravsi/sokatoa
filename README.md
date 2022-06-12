@@ -122,20 +122,58 @@ The *Open Sans* font was used for bodies of text as it is considered complimenta
 ### Structure
 
 <br>
-The site is spread across one page with multiple sections:
+The site is constructed to be very user-friendly. Upon arriving on the site the user is asked what activity they would like to do. The site is spread across three seperate pages:
 
-- An home section which includes a hero-image, a short descriptive blurb and a performance section.
-- An about section which contains information on the events the quartet accommodates and information on wach of the players.
-- A gallery section containing images of the quartet.
-- A contact section to allow the user to quickly get in contact with the quartet.
+- A home-page with four diffent views:
+    - A menu to choose the activity.
+    - one page where to user can learn.
+    - one page with a quiz.
+    - one page with the quiz results.
+- A contact form.
+- A 404 page.
 <br>
 
 ### Wireframes
-<details><summary> <b>One-Page Layout</b> </summary>
+<details><summary> <b>Landing screen</b> </summary>
     <figure>
-        <img src="docs/wireframes/final.png"
-            alt="A wireframe for the home page">
-        <figcaption>A wireframe for the one-page layout on mobile, tablet & browser</figcaption>
+        <img src="docs/wireframes/landing-screen.png"
+            alt="A wireframe for the landing screen">
+        <figcaption>A wireframe for the landing screen on mobile & browser</figcaption>
+    </figure>
+</details>
+<details><summary> <b>Learning screen</b> </summary>
+    <figure>
+        <img src="docs/wireframes/learn-screen.png"
+            alt="A wireframe for the learnign screen">
+        <figcaption>A wireframe for the learning screen on mobile & browser</figcaption>
+    </figure>
+</details>
+<details><summary> <b>Practice screen</b> </summary>
+    <figure>
+        <img src="docs/wireframes/practice-screen.png"
+            alt="A wireframe for the practice screen">
+        <figcaption>A wireframe for the practice screen on mobile & browser</figcaption>
+    </figure>
+</details>
+<details><summary> <b>Review screen</b> </summary>
+    <figure>
+        <img src="docs/wireframes/review-screen.png"
+            alt="A wireframe for the review screen">
+        <figcaption>A wireframe for the review screen on mobile & browser</figcaption>
+    </figure>
+</details>
+<details><summary> <b>Contact form screen</b> </summary>
+    <figure>
+        <img src="docs/wireframes/contact.png"
+            alt="A wireframe for the contact form page">
+        <figcaption>A wireframe for the contact form page on mobile & browser</figcaption>
+    </figure>
+</details>
+<details><summary> <b>Form confirmation screen</b> </summary>
+    <figure>
+        <img src="docs/wireframes/form-conformation.png"
+            alt="A wireframe for the form confirmation screen">
+        <figcaption>A wireframe for the form confirmation screen on mobile & browser</figcaption>
     </figure>
 </details>
 <br>

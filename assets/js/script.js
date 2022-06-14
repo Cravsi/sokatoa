@@ -1,8 +1,7 @@
 /**
  * Load JS content after page is loaded
  */
-document.addEventListener('DOMContentLoaded', function () {
-
+window.addEventListener('load', function () {
 
     const landingScreen = document.getElementById('landing-screen');
     const learnScreen = document.getElementById('learn-screen');
@@ -10,13 +9,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const reviewScreen = document.getElementById('review-screen');
     let navButtons = document.getElementsByClassName('nav-button');
 
-    for (let button in navButtons) {
-        button.addEventListener('click', function(){
-            let page = this.getAttribute('data-type');
-            goToPage(page);
-        })
+    for (let i = 0; i < navButtons.length; i++) {
+        let page = navButtons[i].getAttribute('data-type');
+
+        navButtons[i].addEventListener('click', goToPage(page))
     }
 
+    /**
+     * Function to select the correct page section on the HTML when the
+     * corresponding button is pressed.
+     */
     function goToPage(page) {
         if (page === 'landing') {
             landingScreen.classList.remove('hide');

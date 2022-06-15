@@ -1,3 +1,22 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap');
+/* Font Family - font-family: 'Noto Sans', sans-serif; */
+
+:root {
+    --white: #FFFFFD;
+    --grey: #b8b8b8;
+    --black: #1f1f1f;
+    --red: #ff0000;
+    --green: #00ff00;
+}
+
+/* Element Styles */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
 html {
     font-size: 62.5%;   /* 1rem becomes = 10px */
     min-width: 100%;
@@ -7,9 +26,13 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    border: none;
+    background-color: var(--white);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Sans', sans-serif;
+    letter-spacing: 0.1875rem;
 }
 
 body::before {
@@ -29,6 +52,29 @@ section {
     margin: 1rem;
     height: 30rem;
     border: 2px solid black;
+}
+
+/* Hide Scroll Bar */
+body {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+body::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+/* Font Helper Classes */
+.font-w600 {
+    font-weight: 600;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+/* Header Styling */
+#header-logo {
+    
 }
 
 .hide {

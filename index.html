@@ -1,60 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Sokatoa, a site to learn the basics of trigonometric funcions with a fun quiz">
-        <meta name="keywords" content="sokatoa, sin, cos, tan, learn, trigonometric, funcions, trig, trigonometry, quiz, triangle, angles, basics, fundamentals">
-        <meta name="author" content="Shaun Bonner">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <title>Sokatoa</title>
-    </head>
-    <body>
-        <header>
-            <a href="index.html" target="_blank" rel="noopener noreferrer">
-                <img id='header-logo' src="assets/images/triangle.jpg" alt="Sokatoa logo">
-            </a>
-            <h1>Sokatoa</h1>
-        </header>
-        <main>
-            <section id="landing-screen" class="screen">
-                <div>
-                    <p>What would you like to do today?<p>
-                    <button data-type="learn" direction='next' type="button" class="nav-button">Next</button>
-                </div>
-            </section>
-            <section id="learn-screen" class="screen hide">
-                <div>
-                    <h2>The Basics of Trigonometric Functions</h2>
-                    <img src="" alt="">
-                    <div>
-                        <h3>Soh</h3>
-                        <h3>Cah</h3>
-                        <h3>Toa</h3>
-                    </div>
-                    <button data-type="practice" direction='next' type="button">Next</button>
-                    <button data-type="landing" direction='back' type="button">Back</button>
-                </div>
-            </section>
-            <section id="quiz-screen" class="screen hide">
-                <button data-type="review" direction='next' type="button">Next</button>
-                <button data-type="learn" direction='back' type="button">Back</button>
-            </section>
-            <section id="review-screen" class="screen hide">
-                <button data-type="practice" direction='back' type="button">Back</button>
-            </section>
-        </main>
-        <footer>
-            <div id="socials">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sokatoa, a site to learn the basics of trigonometric funcions with a fun quiz">
+    <meta name="keywords"
+        content="sokatoa, sin, cos, tan, learn, trigonometric, funcions, trig, trigonometry, quiz, triangle, angles, basics, fundamentals">
+    <meta name="author" content="Shaun Bonner">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Sokatoa</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" target="_blank" rel="noopener noreferrer">
+            <img id='header-logo' src="assets/images/triangle.jpg" alt="Sokatoa logo">
+        </a>
+        <h1>Sokatoa</h1>
+    </header>
+    <main>
+        <section id="landing-screen" class="screen">
+            <div>
+                <p>What would you like to do today?<p>
+                        <button data-type="learn" direction='next' type="button" class="nav-button">Next</button>
             </div>
-            <div id="contact">
-
+        </section>
+        <section id="learn-screen" class="screen hide">
+            <div>
+                <h2>The Basics of Trigonometric Functions</h2>
+                <img src="" alt="">
+                <div>
+                    <h3>Soh</h3>
+                    <h3>Cah</h3>
+                    <h3>Toa</h3>
+                </div>
+                <button data-type="practice" direction='next' type="button">Next</button>
+                <button data-type="landing" direction='back' type="button">Back</button>
             </div>
-        </footer>
+        </section>
+        <section id="quiz-screen" class="screen hide">
+            <button data-type="review" direction='next' type="button">Next</button>
+            <button data-type="learn" direction='back' type="button">Back</button>
+        </section>
+        <section id="review-screen" class="screen hide">
+            <button data-type="practice" direction='back' type="button">Back</button>
+        </section>
+    </main>
+    <footer>
+        <!-- Social Media Links -->
+        <div id="footer-socials" style="clear: both;">
+            <ul class="footer-list">
+                <li class="hvr-grow">
+                    <a href="https://instagram.com" target="_blank" rel="noopener" 
+                    aria-label="Opens Instagram in a new tab"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="hvr-grow">
+                    <a href="https://github.com/Cravsi" target="_blank" rel="noopener" 
+                    aria-label="Opens Github in a new tab"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li class="hvr-grow">
+                    <a href="https://www.linkedin.com/in/shaun-bonner/" target="_blank" rel="noopener" 
+                    aria-label="Opens linkedin in a new tab"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 
-        <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 
-    </body>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/abd9a7d119.js" crossorigin="anonymous"></script>
+
+</body>
+
 </html>

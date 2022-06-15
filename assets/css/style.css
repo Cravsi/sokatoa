@@ -45,13 +45,18 @@ header {
     top: 0;
     z-index: 10;
     margin-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:none;
+    height: ;
 }
 
 section {
-    background-color: antiquewhite;
+    background-color: var(--white);
     margin: 1rem;
     height: 30rem;
-    border: 2px solid black;
+    border: 2px solid var(--black);
 }
 
 /* Hide Scroll Bar */
@@ -74,7 +79,10 @@ body::-webkit-scrollbar {
 
 /* Header Styling */
 #header-logo {
-    
+    height: calc(3rem + 2vw);
+    width: calc(3rem + 2vw);
+    padding: 1rem;
+    margin-right: 2rem;
 }
 
 .hide {

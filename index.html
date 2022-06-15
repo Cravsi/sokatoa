@@ -13,7 +13,7 @@
     <body>
         <header>
             <h1>
-                <img src="" alt="" srcset="">
+                <img id='header-logo' src="assets/images/triangle.jpg" alt="Sokatoa logo">
                 Sokatoa
             </h1>
         </header>
@@ -21,12 +21,10 @@
             <section id="landing-screen" class="screen">
                 <div>
                     <p>What would you like to do today?<p>
-                    <button data-type="learn" type="button" class="nav-button">Learn</button>
-                    <button data-type="practice" type="button" class="nav-button">Practice</button>
-                        
+                    <button data-type="learn" direction='next' type="button" class="nav-button">Next</button>
                 </div>
             </section>
-            <section id="learn-screen" class="screen">
+            <section id="learn-screen" class="screen hide">
                 <div>
                     <h2>The Basics of Trigonometric Functions</h2>
                     <img src="" alt="">
@@ -35,14 +33,16 @@
                         <h3>Cah</h3>
                         <h3>Toa</h3>
                     </div>
-                    <button data-type="practice" type="button">Practice</button>
+                    <button data-type="practice" direction='next' type="button">Next</button>
+                    <button data-type="landing" direction='back' type="button">Back</button>
                 </div>
             </section>
-            <section id="quiz-screen" class="screen">
-                <button data-type="review" type="button" class="nav-button">Review</button>
+            <section id="quiz-screen" class="screen hide">
+                <button data-type="review" direction='next' type="button">Next</button>
+                <button data-type="learn" direction='back' type="button">Back</button>
             </section>
-            <section id="review-screen" class="screen">
-                <button data-type="review" type="button" class="nav-button">Practice some more?</button>
+            <section id="review-screen" class="screen hide">
+                <button data-type="practice" direction='back' type="button">Back</button>
             </section>
         </main>
         <footer>

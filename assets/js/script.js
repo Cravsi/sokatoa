@@ -2,7 +2,9 @@
  * Load JS content after page is loaded
  */
 
-
+/**
+ * Declaration of global constants and variables.
+ */
 const landingScreen = document.getElementById('landing-screen');
 const learnScreen = document.getElementById('learn-screen');
 const quizScreen = document.getElementById('quiz-screen');
@@ -42,6 +44,7 @@ function goToPage(button) {
             quizScreen.classList.remove('hide');
         break;
         default:
+            console.log("Unrecognised button: ", button)
             break;
     }
 }

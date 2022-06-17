@@ -30,7 +30,7 @@
         <section id="learn-screen" class="screen hide">
             <div>
                 <h2>The Basics of Trigonometric Functions</h2>
-                <img src="" alt="">
+                <img src="assets/images/sohcahtoa.webp" alt="">
                 <div>
                     <h3>Soh</h3>
                     <h3>Cah</h3>
@@ -41,8 +41,15 @@
             </div>
         </section>
         <section id="quiz-screen" class="screen hide">
-            <button type="button" class="nav-button" onclick="goToPage('quiz-next')">Next</button>
-            <button type="button" class="nav-button" onclick="goToPage('quiz-back')">Back</button>
+            <div id="timer"></div>
+            <div id="score"></div>
+            <div id="quiz-begin">
+                <h3 class="font-w600">Begin?</h3>
+            </div>
+            <div>
+                <button type="button" class="nav-button" onclick="goToPage('quiz-next')">Next</button>
+                <button type="button" class="nav-button" onclick="goToPage('quiz-back')">Back</button>
+            </div>
         </section>
         <section id="review-screen" class="screen hide">
             <button type="button" class="nav-button" onclick="goToPage('review-back')">Back</button>

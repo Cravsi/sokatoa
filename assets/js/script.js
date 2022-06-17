@@ -1,59 +1,47 @@
 /**
  * Load JS content after page is loaded
  */
-window.addEventListener('load', function () {
 
-    const landingScreen = document.getElementById('landing-screen');
-    const learnScreen = document.getElementById('learn-screen');
-    const quizScreen = document.getElementById('quiz-screen');
-    const reviewScreen = document.getElementById('review-screen');
-    let navButtons = document.getElementsByClassName('nav-button');
 
-    for (let i = 0; i < navButtons.length; i++) {
-        let page = navButtons[i].getAttribute('data-type');
-        let direction = navButtons[i].getAttribute('direction');
+const landingScreen = document.getElementById('landing-screen');
+const learnScreen = document.getElementById('learn-screen');
+const quizScreen = document.getElementById('quiz-screen');
+const reviewScreen = document.getElementById('review-screen');
+let navButtons = document.getElementsByClassName('nav-button');
 
-        navButtons[i].addEventListener('click', goToPage(page, direction))
+
+/**
+ * Function for navigational buttons located in index.html
+ * @param {string} button
+ */
+function goToPage(button) {
+
+    switch (button) {
+        case 'landing-next':
+            landingScreen.classList.add('hide');
+            learnScreen.classList.remove('hide');
+            break;
+        case 'learn-next':
+            learnScreen.classList.add('hide');
+            quizScreen.classList.remove('hide');
+            break;
+        case 'learn-back':
+            learnScreen.classList.add('hide');
+            landingScreen.classList.remove('hide');
+        break;
+        case 'quiz-next':
+            quizScreen.classList.add('hide')
+            reviewScreen.classList.remove('hide')
+            break;
+        case 'quiz-back':
+            quizScreen.classList.add('hide')
+            learnScreen.classList.remove('hide')
+        break;
+        case 'review-back':
+            reviewScreen.classList.add('hide');
+            quizScreen.classList.remove('hide');
+        break;
+        default:
+            break;
     }
-
-    /**
-     * Function to select the correct page section on the HTML when the
-     * corresponding button is pressed.
-     */
-    function goToPage(page, direction) {
-        if (!page) return;  // Guard clause
-
-        switch (page, direction) {
-            case 'landing':
-                if (landingScreen.classList.contains('hide')) {
-                    landingScreen.classList.remove('hide'); 
-                }
-                break;
-            case 'learn':
-                if (direction === 'next') {
-                    landingScreen.classList.add('hide');
-                    learnScreen.classList.remove('hide');
-                    break;
-                }
-                quizScreen.classList.add('hide');
-                learnScreen.classList.remove('hide');
-                break;
-            case 'practice':
-                if (direction === 'next') {
-                    quizScreen.classList.add('hide');
-                    practiceScreen.classList.remove('hide');
-                    break;
-                }
-                reviewScreen.classList.add('hide');
-                practiceScreen.classList.remove('hide');
-                break;
-            case 'review':
-                if (reviewScreen.classList.contains('hide')) {
-                    reviewScreen.classList.remove('hide'); 
-                }
-                break;
-            default:
-                break;
-        }
-    }
-})
+}

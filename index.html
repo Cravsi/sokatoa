@@ -24,7 +24,7 @@
         <section id="landing-screen" class="screen">
             <div>
                 <p>What would you like to do today?<p>
-                        <button data-type="learn" direction='next' type="button" class="nav-button">Next</button>
+                <button type="button" class="nav-button" onclick="goToPage('landing-next')">Next</button>
             </div>
         </section>
         <section id="learn-screen" class="screen hide">
@@ -36,16 +36,16 @@
                     <h3>Cah</h3>
                     <h3>Toa</h3>
                 </div>
-                <button data-type="practice" direction='next' type="button">Next</button>
-                <button data-type="landing" direction='back' type="button">Back</button>
+                <button type="button" class="nav-button" onclick="goToPage('learn-next')">Next</button>
+                <button type="button" class="nav-button" onclick="goToPage('learn-back')">Back</button>
             </div>
         </section>
         <section id="quiz-screen" class="screen hide">
-            <button data-type="review" direction='next' type="button">Next</button>
-            <button data-type="learn" direction='back' type="button">Back</button>
+            <button type="button" class="nav-button" onclick="goToPage('quiz-next')">Next</button>
+            <button type="button" class="nav-button" onclick="goToPage('quiz-back')">Back</button>
         </section>
         <section id="review-screen" class="screen hide">
-            <button data-type="practice" direction='back' type="button">Back</button>
+            <button type="button" class="nav-button" onclick="goToPage('review-back')">Back</button>
         </section>
     </main>
     <footer>

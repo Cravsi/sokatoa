@@ -117,6 +117,40 @@ body::-webkit-scrollbar {
     box-shadow:  2px 2px var(--grey) inset;
 }
 
+#quiz-grid-image {
+    grid-area: image;
+}
+#quiz-grid-question {
+    grid-area: question;
+}
+#quiz-grid-option1 {
+    grid-area: option1;
+}
+#quiz-grid-option2 {
+    grid-area: option2;
+}
+#quiz-grid-option3 {
+    grid-area: option3;
+}
+#quiz-grid-option4 {
+    grid-area: option4;
+}
+#quiz-reset {
+    grid-area: reset;
+}
+
+#quiz-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: minmax(5rem, auto);
+    grid-template-areas: 
+    "image  image"
+    "question question"
+    "option1 option2"
+    "option3 option4"
+    "reset reset";
+}
+
 /* Footer Styling */
 a>i {
     font-size: 160%;
@@ -131,6 +165,19 @@ a>i {
     margin: 1rem 2rem;
 }
 
+/* Quiz Media Queries */
+@media only screen and (min-width: 768px) {
+    #quiz-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: minmax(5rem, auto);
+        grid-template-areas: 
+        "question question image"
+        "option1 option2 image"
+        "option3 option4 image"
+        ". . reset";
+    }
+}
 /* Button Animations - taken from https://ianlunn.github.io/Hover/*/
 .hvr-grow {
     display: inline-block;

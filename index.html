@@ -41,18 +41,22 @@
             </div>
         </section>
         <section id="quiz-screen" class="screen hide">
-            <div id="timer"></div>
-            <div id="score"></div>
+            <div>
+                <p>Time: <span id="timer">0</span></p>
+            </div>
+            <div>
+                <p>Score: <span id="score">0</span></p>
+            </div>
             <div id="quiz-begin">
                 <h3 class="font-w600">Begin?</h3>
             </div>
             <div id="quiz-grid" class="hide">
-                <div id="quiz-grid-image"></div>
-                <div id="quiz-grid-question"></div>
-                <div id="quiz-grid-answer1"></div>
-                <div id="quiz-grid-answer2"></div>
-                <div id="quiz-grid-answer3"></div>
-                <div id="quiz-grid-answer4"></div>
+                <div id="quiz-grid-image"><img id="quiz-image" src="" alt="A trigonometry question"></div>
+                <div id="quiz-grid-question"><h2 id="question"></h2></div>
+                <div id="quiz-grid-option1"><h3 id="option1"></h3></div>
+                <div id="quiz-grid-option2"><h3 id="option2"></h3></div>
+                <div id="quiz-grid-option3"><h3 id="option3"></h3></div>
+                <div id="quiz-grid-option4"><h3 id="option4"></h3></div>
                 <button type="button" id="quiz-reset">Reset Quiz</button>
             </div>
             <div>

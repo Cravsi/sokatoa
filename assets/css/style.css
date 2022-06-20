@@ -36,6 +36,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Sans', sans-serif;
     letter-spacing: 0.1875rem;
     text-align: center;
+    font-size: large;
 }
 
 body::before {
@@ -67,7 +68,7 @@ footer {
 
 section {
     background-color: var(--white);
-    margin: 3vh 4vw;
+    margin: 1vh 4vw ;
     min-height: 30rem;
     border: 2px solid var(--black);
 }
@@ -94,16 +95,16 @@ body::-webkit-scrollbar {
     text-transform: uppercase;
 }
 
-/* Header Styling */
-#header-logo {
-    height: calc(3rem + 2vw);
-    width: calc(3rem + 2vw);
-    padding: 1rem;
-    margin-right: 2rem;
-}
-
 .hide {
     display: none !important;
+}
+
+/* Header Styling */
+#header-logo {
+    height: calc(1.5rem + 2vw);
+    width: calc(1.5rem + 2vw);
+    padding: 1rem;
+    margin-right: 2rem;
 }
 
 /* Landing Page Styling */
@@ -121,10 +122,6 @@ body::-webkit-scrollbar {
 
 #landing-screen p {
     padding: 2rem 3rem 1rem 3rem;
-}
-
-#landing-screen h2 {
-    padding-top: 2rem;
 }
 
 /* Quiz Screen Styling */
@@ -186,6 +183,13 @@ body::-webkit-scrollbar {
     min-height: 70vh;
     position: relative;
     padding-bottom: calc(54px + 4vw);
+    font-size: 14px;
+    padding: 0 15px;
+}
+
+.screen h2 {
+    padding: 1rem 1rem;
+    font-size: medium;
 }
 
 .nav {

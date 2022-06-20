@@ -421,9 +421,13 @@ Cloning a repo allows you to make local changes to the repository before committ
 <br>
 
 ## Credits
+Explanations for the Sohcahtoa memnomic were taken from <a href="https://calcworkshop.com/triangle-trig/sohcahtoa/">CalcWorkshop</a>
+<br>
 
 ### Images
-
+<a href="assets/images/opposite-adjacent-hypotenuse-diagram.png">Right Angle Diagram</a> taken from <a href="https://calcworkshop.com/triangle-trig/sohcahtoa/">CalcWorkshop</a>
+<br>
+<a href="assets/images/sohcahtoa-chart.png">SohCahToa Diagram</a> taken from <a href="https://calcworkshop.com/triangle-trig/sohcahtoa/">CalcWorkshop</a>
 <br>
 
 ### Code

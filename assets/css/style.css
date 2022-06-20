@@ -20,6 +20,7 @@
 html {
     font-size: 62.5%;   /* 1rem becomes = 10px */
     min-width: 100%;
+    min-height: 100%;
 }
 
 body {
@@ -44,17 +45,18 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
-    margin-bottom: 10rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color:none;
+    background-color: var(--white);
 }
 
 footer {
     display: flex;
     align-items: center;
-    position: relative;
+    position: fixed;
     bottom: 0;
     background-color: var(--grey);
     min-height: 4rem;
@@ -63,7 +65,7 @@ footer {
 
 section {
     background-color: var(--white);
-    margin: 1rem;
+    margin: 3vh 4vw;
     min-height: 30rem;
     border: 2px solid var(--black);
 }
@@ -149,6 +151,42 @@ body::-webkit-scrollbar {
     "option1 option2"
     "option3 option4"
     "reset reset";
+}
+
+/* Common Styles */
+.screen{
+    margin-bottom: calc(4rem + 5vh);
+    min-height: 70vh;
+    position: relative;
+    padding-bottom: calc(70px + 2vw);
+}
+
+.nav {
+    min-width: 100%;
+    position: absolute;
+    clear: both;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: calc(10px + 2vw) 0;
+}
+
+.nav-button {
+    color: var(--white);
+    background-color: var(--black);
+    border: 1px solid var(--white);
+    padding: 8px 22px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin: 0 1rem;
+    display: inline-block;
+}
+
+.nav-button:hover {
+    color: var(--black);
+    background-color: var(--white);
+    border: 1px solid var(--black);
 }
 
 /* Footer Styling */

@@ -22,8 +22,8 @@
     </header>
     <main>
         <section id="landing-screen" class="screen">
-            <div>
-                <p>What would you like to do today?<p>
+            <p>Welcome to <span class="font-w600 upper">Sokatoa</span></p>
+            <div class="nav">
                 <button type="button" class="nav-button" onclick="goToPage('landing-next')">Next</button>
             </div>
         </section>
@@ -36,8 +36,10 @@
                     <h3>Cah</h3>
                     <h3>Toa</h3>
                 </div>
-                <button type="button" class="nav-button" onclick="goToPage('learn-next')">Next</button>
+            </div>
+            <div class="nav">
                 <button type="button" class="nav-button" onclick="goToPage('learn-back')">Back</button>
+                <button type="button" class="nav-button" onclick="goToPage('learn-next')">Next</button>
             </div>
         </section>
         <section id="quiz-screen" class="screen hide">
@@ -59,13 +61,15 @@
                 <div id="quiz-grid-option4"><h3 id="option4"></h3></div>
                 <button type="button" id="quiz-reset">Reset Quiz</button>
             </div>
-            <div>
-                <button type="button" class="nav-button" onclick="goToPage('quiz-next')">Next</button>
+            <div class="nav">
                 <button type="button" class="nav-button" onclick="goToPage('quiz-back')">Back</button>
+                <button type="button" class="nav-button" onclick="goToPage('quiz-next')">Next</button>
             </div>
         </section>
         <section id="review-screen" class="screen hide">
-            <button type="button" class="nav-button" onclick="goToPage('review-back')">Back</button>
+            <div class="nav">
+                <button type="button" class="nav-button" onclick="goToPage('review-back')">Back</button>
+            </div>
         </section>
     </main>
     <footer>

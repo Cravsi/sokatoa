@@ -19,8 +19,7 @@
 
 html {
     font-size: 62.5%;   /* 1rem becomes = 10px */
-    min-width: 100%;
-    min-height: 100%;
+    width: 100vw;
 }
 
 body {
@@ -109,15 +108,23 @@ body::-webkit-scrollbar {
 
 /* Landing Page Styling */
 #landing-screen {
-    padding: 2rem 1rem 5rem 1rem;
+    padding: 0 1rem 5rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #landing-screen img {
-    min-width: 70%;
-    max-width: 40rem;
+    margin: 0 20%;
+    max-width: 80%;
+}
+
+#landing-screen p {
+    padding: 2rem 3rem 1rem 3rem;
+}
+
+#landing-screen h2 {
+    padding-top: 2rem;
 }
 
 /* Quiz Screen Styling */
@@ -177,9 +184,8 @@ body::-webkit-scrollbar {
 .screen{
     margin-bottom: calc(4rem + 5vh);
     min-height: 70vh;
-    min-width: 300px;
     position: relative;
-    padding-bottom: calc(70px + 2vw);
+    padding-bottom: calc(54px + 4vw);
 }
 
 .nav {
@@ -224,7 +230,7 @@ a>i {
     margin: 1rem 2rem;
 }
 
-/* Quiz Media Queries */
+/* Media Queries */
 @media only screen and (min-width: 768px) {
     #quiz-grid {
         display: grid;
@@ -235,6 +241,11 @@ a>i {
         "option1 option2 image"
         "option3 option4 image"
         ". . reset";
+    }
+
+    #landing-screen img {
+        margin: 0 20%;
+        max-width: 50%;
     }
 }
 /* Button Animations - taken from https://ianlunn.github.io/Hover/*/

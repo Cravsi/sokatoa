@@ -109,7 +109,6 @@ body::-webkit-scrollbar {
 
 /* Landing Page Styling */
 #landing-screen {
-    padding: 0 1rem 5rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -117,11 +116,21 @@ body::-webkit-scrollbar {
 
 #landing-screen img {
     margin: 0 20%;
-    max-width: 80%;
+    max-width: 100%;
 }
 
 #landing-screen p {
     padding: 2rem 3rem 1rem 3rem;
+}
+
+/* Learn Screen Styling */
+.learn-img {
+    display: flex;
+    justify-content: center;
+}
+
+.learn-img img {
+    width: 70%;
 }
 
 /* Quiz Screen Styling */
@@ -182,9 +191,8 @@ body::-webkit-scrollbar {
     margin-bottom: calc(4rem + 5vh);
     min-height: 70vh;
     position: relative;
-    padding-bottom: calc(54px + 4vw);
+    padding: 0 1rem 7rem 1rem;
     font-size: 14px;
-    padding: 0 15px;
 }
 
 .screen h2 {
@@ -250,6 +258,10 @@ a>i {
     #landing-screen img {
         margin: 0 20%;
         max-width: 50%;
+    }
+
+    #learn-screen img {
+        width: 50%;
     }
 }
 /* Button Animations - taken from https://ianlunn.github.io/Hover/*/

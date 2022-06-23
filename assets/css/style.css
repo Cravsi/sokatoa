@@ -189,10 +189,9 @@ body::-webkit-scrollbar {
 /* Common Styles */
 .screen{
     margin-bottom: calc(4rem + 5vh);
-    min-height: 70vh;
     max-width: 80%;
     position: relative;
-    padding: 0 1rem 7rem 1rem;
+    padding: 0 1rem 2rem 1rem;
     font-size: 14px;
 }
 
@@ -203,13 +202,12 @@ body::-webkit-scrollbar {
 
 .nav {
     min-width: 100%;
-    position: absolute;
     clear: both;
     bottom: 0;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    padding: calc(10px + 2vw) 0;
+    padding: 4rem 0 1rem;
 }
 
 .nav-button {

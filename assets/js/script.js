@@ -13,6 +13,7 @@ let navButtons = document.getElementsByClassName('nav-button');
 const beginButton = document.getElementById('quiz-begin');
 const quizContainer = document.getElementById('quiz-grid')
 const quizQuestion = document.getElementById('quiz-grid-question')
+const quizQuestionContainer = document.getElementById('quiz-buttons')
 let shuffledQuestions, currentQuestionIndex
 
 /**
@@ -65,19 +66,36 @@ function startQuiz() {
     shuffledQuestions = trigQuestions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
 
-    setQuestion()
-}
+    nextQuestion()
+}   
 
 function nextQuestion() {
     setQuestion(shuffledQuestions[currentQuestionIndex])
+
 }
 
 /**
- * Gets a random question from the getQuestion() function
- * in quiz.js and populates the quiz grid.
+ * Sets the question provided in the quiz screen section. Options from each question
+ * object are shuffled and a button is created for each option. The "correct" dataset
+ * is added to the correct option.
  */
 function setQuestion(question) {
     quizQuestion.innerHTML = question.trigQuestion
+    let shuffleOptions = question.trigOptions.sort(() => Math.floor(Math.random() * 4))
+
+    shuffleOptions.forEach(option => {
+        const newButton = document.createElement('button')
+        newButton.innerHTML = option
+        newButton.classList.add('q-buttons')
+
+        if (option === question.trigAnswer) {
+            newButton.dataset.correct
+        }
+
+        quizQuestionContainer.appendChild(newButton)
+
+    })
+    
 };
 
 function quizReset () {

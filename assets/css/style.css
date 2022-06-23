@@ -135,6 +135,12 @@ body::-webkit-scrollbar {
 }
 
 /* Quiz Screen Styling */
+#game-info{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
 #quiz-begin {
     padding: 3rem;
     margin: 2rem;

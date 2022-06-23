@@ -8,6 +8,7 @@
     --black: #1f1f1f;
     --red: #ff0000;
     --green: #00ff00;
+    --hue-blue: 200;
 }
 
 /* Element Styles */
@@ -158,38 +159,38 @@ body::-webkit-scrollbar {
 #quiz-grid-question {
     grid-area: question;
 }
-#quiz-grid-option1 {
-    grid-area: option1;
-}
-#quiz-grid-option2 {
-    grid-area: option2;
-}
-#quiz-grid-option3 {
-    grid-area: option3;
-}
-#quiz-grid-option4 {
-    grid-area: option4;
-}
-#quiz-reset {
-    grid-area: reset;
+#quiz-buttons {
+    grid-area: buttons;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+    margin: 20px 0;
 }
 
 #quiz-grid {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: minmax(5rem, auto);
+    gap: 1rem;
+    margin: 20px 0;
     grid-template-areas: 
     "image  image"
     "question question"
-    "option1 option2"
-    "option3 option4"
-    "reset reset";
+    "buttons buttons";
+}
+
+.q-buttons {
+    background-color: hsl(var(--hue-blue), 100%, 60%);
+    border: 1px solid hsl(var(--hue-blue), 100%, 30%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
 }
 
 /* Common Styles */
 .screen{
     margin-bottom: calc(4rem + 5vh);
     min-height: 70vh;
+    max-width: 80%;
     position: relative;
     padding: 0 1rem 7rem 1rem;
     font-size: 14px;
@@ -250,9 +251,8 @@ a>i {
         grid-template-rows: minmax(5rem, auto);
         grid-template-areas: 
         "question question image"
-        "option1 option2 image"
-        "option3 option4 image"
-        ". . reset";
+        "buttons buttons image"
+        "buttons buttons image";
     }
 
     #landing-screen img {

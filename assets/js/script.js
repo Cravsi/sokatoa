@@ -5,22 +5,28 @@
 /**
  * Declaration of global constants and variables.
  */
-const landingScreen = document.getElementById('landing-screen');
-const learnScreen = document.getElementById('learn-screen');
-const quizScreen = document.getElementById('quiz-screen');
-const reviewScreen = document.getElementById('review-screen');
-let navButtons = document.getElementsByClassName('nav-button');
-const beginButton = document.getElementById('quiz-begin');
-const quizContainer = document.getElementById('quiz-grid')
-const quizQuestion = document.getElementById('quiz-grid-question')
-const quizQuestionContainer = document.getElementById('quiz-buttons')
-let shuffledQuestions, currentQuestionIndex
+const landingScreen = document.querySelector('#landing-screen');
+const learnScreen = document.querySelector('#learn-screen');
+const quizScreen = document.querySelector('#quiz-screen');
+const reviewScreen = document.querySelector('#review-screen');
+const navButtons = Array.from(document.querySelectorAll('.nav-button'));
+const beginButton = document.querySelector('#quiz-begin');
+const quizContainer = document.querySelector('#quiz-grid')
+const quizQuestion = document.querySelector('#quiz-grid-question')
+const quizQuestionContainer = document.querySelector('#quiz-buttons')
+let shuffledQuestions
+let currentQuestionIndex
+
+navButtons.forEach(button => {
+    button.addEventListener('click', function (event){
+        event.preventDefault()
+        console.log(this.dataset.type)
+        goToPage(this.dataset.type)
+    })
+})
 
 /**
- * Function for navigational buttons located in index.html
- * Adds and removes the .hide class from section.
- * display: none to hide sections
- * display: block to show sections.
+ * Navigational buttons 
  * @param {string} button
  */
 function goToPage(button) {

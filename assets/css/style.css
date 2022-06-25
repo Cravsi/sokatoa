@@ -192,6 +192,12 @@ body::-webkit-scrollbar {
     outline: none;
 }
 
+.q-buttons:hover {
+    background-color: hsl(var(--hue-blue), 100%, 30%);
+    border: 1px solid hsl(var(--hue-blue), 100%, 60%);
+    color: var(--white);
+}
+
 .correct {
     background-color: var(--green);
 }

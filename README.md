@@ -429,7 +429,11 @@ Explanations for the Sohcahtoa memnomic were taken from <a href="https://calcwor
 <br>
 <a href="assets/images/sohcahtoa-chart.png">SohCahToa Diagram</a> taken from <a href="https://calcworkshop.com/triangle-trig/sohcahtoa/">CalcWorkshop</a>
 <br>
-<a href="assets/images/questions/question2.png">Trigonometry Diagram</a> taken from <a href="https://mathsmadeeasy.co.uk/">MathsMadeEasy</a>
+<a href="assets/images/questions/question2.png">Trigonometry Diagram 2</a> taken from <a href="https://mathsmadeeasy.co.uk/">MathsMadeEasy</a>
+<br>
+<a href="assets/images/questions/question3.png">Trigonometry Diagram 3</a> taken from <a href="https://mathsmadeeasy.co.uk/">MathsMadeEasy</a>
+<br>
+<a href="assets/images/questions/question4.png">Trigonometry Diagram 4</a> taken from <a href="https://mathsmadeeasy.co.uk/">MathsMadeEasy</a>
 <br>
 
 ### Code

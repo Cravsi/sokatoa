@@ -77,21 +77,6 @@ function startQuiz() {
     nextQuestion()
 }   
 
-// async function getJSON() {
-//     const response = await fetch('./assets/js/quiz.json');
-//     const questions = await response.json();
-//     console.log(questions);
-//     return questions;
-// }
-
-// function getJSON() {
-//     fetch('./assets/js/quiz.json')
-//         .then((res) => res.json())
-//         .then((data) => {
-//             return data
-//         })
-// }
-
 /**
  * Set the next question in quiz area
  */
@@ -164,8 +149,6 @@ function incrementScore () {
     let score = parseInt(document.querySelector('#score').innerHTML);
     document.querySelector('#score').innerHTML = ++score;
 }
-
-
 
 function quizReset () {
 

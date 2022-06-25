@@ -443,6 +443,8 @@ Explanations for the Sohcahtoa memnomic were taken from <a href="https://calcwor
 <br>
 <a href="assets/images/questions/question9.png">Trigonometry Diagram 9</a> taken from <a href="https://www.mathsisfun.com/">mathsisfuncom</a>
 <br>
+<a href="assets/images/questions/question10.png">Trigonometry Diagram 10</a> taken from <a href="https://www.justinmath.com/trigonometric-functions/">Justin Math</a>
+<br>
 
 ### Code
 - The button hover animations for the menu buttons and logo buttons taken from <a href="https://github.com/IanLunn/Hover">Hover</a> by <a href="https://github.com/IanLunn">Ian Lunn</a> on GitHub.

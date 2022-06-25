@@ -51,4 +51,10 @@ const trigQuestions = [{
     trigAnswer: "sin",
     trigOptions: ["sin", "cos", "tan"],
     trigQuestion: "Which trig function should be used to calculate the height of the tree?"
+},
+{
+    trigImage: "assets/images/questions/question10.png",
+    trigAnswer: "cos",
+    trigOptions: ["sin", "cos", "tan"],
+    trigQuestion: "What is the correct trigonometric funtion to find angle theta?"
 }]

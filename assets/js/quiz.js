@@ -33,4 +33,10 @@ const trigQuestions = [{
     trigAnswer: "cos",
     trigOptions: ["sin", "cos", "tan"],
     trigQuestion: "What is the correct trigonometric funtion to find angle theta?"
+},
+{
+    trigImage: "assets/images/questions/question7.png",
+    trigAnswer: "sin",
+    trigOptions: ["sin", "cos", "tan"],
+    trigQuestion: "What is the correct trigonometric funtion to find angle theta?"
 }]

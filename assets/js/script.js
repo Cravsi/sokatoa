@@ -10,6 +10,7 @@ const beginButton = document.querySelector('#quiz-begin');
 const quizContainer = document.querySelector('#quiz-grid')
 const quizQuestion = document.querySelector('#quiz-grid-question')
 const quizQuestionContainer = document.querySelector('#quiz-buttons')
+const quizImage = document.querySelector('#quiz-image');
 let shuffledQuestions
 let currentQuestionIndex
 
@@ -97,6 +98,9 @@ function nextQuestion() {
     setQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
+/**
+ * Removes options from previous question.
+ */
 function resetQuestionArea() {
     while (quizQuestionContainer.firstChild) {
         quizQuestionContainer.removeChild(quizQuestionContainer.firstChild)
@@ -110,6 +114,7 @@ function resetQuestionArea() {
  */
 function setQuestion(question) {
     quizQuestion.innerHTML = question.trigQuestion
+    quizImage.setAttribute('src', question.trigImage)
     let shuffleOptions = question.trigOptions.sort(() => Math.floor(Math.random() * 4))
 
     shuffleOptions.forEach(option => {

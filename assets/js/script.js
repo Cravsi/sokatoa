@@ -123,14 +123,17 @@ function setQuestion(question) {
         newButton.classList.add('q-buttons')
 
         if (option === question.trigAnswer) {
-            newButton.dataset.correct
+            newButton.classList.add('correct')
         }
-
+        newButton.addEventListener('click', checkAnswer);
         quizQuestionContainer.appendChild(newButton)
-
     })
-    
 };
+
+function checkAnswer(event) {
+    let selectedButton = event.target
+    console.log(selectedButton)
+}
 
 function quizReset () {
 

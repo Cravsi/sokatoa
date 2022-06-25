@@ -96,10 +96,18 @@ function startQuiz() {
 function nextQuestion() {
     resetQuestionArea()
     setQuestion(shuffledQuestions[currentQuestionIndex])
+
+    let next = document.querySelector('#next-question')
+    if (!next.classList.contains('hide')){
+        next.classList.add('hide');
+    }
+    
+
 }
 
 /**
- * Removes options from previous question.
+ * Removes options from previous question. Prevents user selecting 
+ * multiple options on the one question.
  */
 function resetQuestionArea() {
     if (quizQuestionContainer.hasAttribute('chosen')){
@@ -146,6 +154,9 @@ function checkAnswer(event) {
             selectedButton.classList.add('incorrect')
         }
         quizQuestionContainer.setAttribute('chosen', '')
+
+        let next = document.querySelector('#next-question')
+        next.classList.remove('hide')
     }
 }
 

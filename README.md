@@ -437,6 +437,8 @@ Explanations for the Sohcahtoa memnomic were taken from <a href="https://calcwor
 <br>
 <a href="assets/images/questions/question5.webp">Trigonometry Diagram 5</a> taken from <a href="https://mathsmadeeasy.co.uk/">MathsMadeEasy</a>
 <br>
+<a href="assets/images/questions/question6.png">Trigonometry Diagram 6</a> taken from <a href="https://www.storyofmathematics.com/trigonometric-functions/">Story of Mathematics</a>
+<br>
 
 ### Code
 - The button hover animations for the menu buttons and logo buttons taken from <a href="https://github.com/IanLunn/Hover">Hover</a> by <a href="https://github.com/IanLunn">Ian Lunn</a> on GitHub.

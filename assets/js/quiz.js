@@ -2,7 +2,7 @@ const trigQuestions = [{
     trigImage: "assets/images/questions/question1.webp",
     trigAnswer: "tan",
     trigOptions: ["sin", "cos", "tan"],
-    trigQuestion: "What is the correct trigonometric funtion?"
+    trigQuestion: "What is the correct trigonometric funtion to find angle 'x'?"
 },
 {
     trigImage: "assets/images/questions/question2.png",
@@ -26,5 +26,11 @@ const trigQuestions = [{
     trigImage: "assets/images/questions/question5.webp",
     trigAnswer: "sin",
     trigOptions: ["sin", "cos", "tan"],
-    trigQuestion: "What is the correct trigonometric funtion?"
+    trigQuestion: "What is the correct trigonometric funtion to find angle 'x'?"
+},
+{
+    trigImage: "assets/images/questions/question6.png",
+    trigAnswer: "cos",
+    trigOptions: ["sin", "cos", "tan"],
+    trigQuestion: "What is the correct trigonometric funtion to find angle theta?"
 }]

@@ -13,7 +13,6 @@ const quizQuestionContainer = document.querySelector('#quiz-buttons')
 const quizImage = document.querySelector('#quiz-image');
 let shuffledQuestions
 let currentQuestionIndex
-let score = 0 
 
 /**
  * Nav button event listeners
@@ -141,15 +140,18 @@ function checkAnswer(event) {
 
     if (!quizQuestionContainer.hasAttribute('chosen')) {
         if (selectedButton.hasAttribute('correct')) {
-            score += 1
+            incrementScore();
             selectedButton.classList.add('correct')
         } else {
             selectedButton.classList.add('incorrect')
         }
         quizQuestionContainer.setAttribute('chosen', '')
     }
-    
-    
+}
+
+function incrementScore () {
+    let score = parseInt(document.querySelector('#score').innerHTML);
+    document.querySelector('#score').innerHTML = ++score;
 }
 
 function quizReset () {

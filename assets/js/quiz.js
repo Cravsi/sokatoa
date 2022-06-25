@@ -21,4 +21,10 @@ const trigQuestions = [{
     trigAnswer: "tan",
     trigOptions: ["sin", "cos", "tan"],
     trigQuestion: "What is the correct trigonometric funtion?"
+},
+{
+    trigImage: "assets/images/questions/question5.webp",
+    trigAnswer: "sin",
+    trigOptions: ["sin", "cos", "tan"],
+    trigQuestion: "What is the correct trigonometric funtion?"
 }]

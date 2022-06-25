@@ -1,8 +1,4 @@
 /**
- * Load JS content after page is loaded
- */
-
-/**
  * Declaration of global constants and variables.
  */
 const landingScreen = document.querySelector('#landing-screen');
@@ -17,6 +13,10 @@ const quizQuestionContainer = document.querySelector('#quiz-buttons')
 let shuffledQuestions
 let currentQuestionIndex
 
+/**
+ * Nav button event listeners
+ * @param {object} navButtons
+ */
 navButtons.forEach(button => {
     button.addEventListener('click', function (event){
         event.preventDefault()
@@ -65,7 +65,8 @@ function goToPage(button) {
 beginButton.addEventListener('click', startQuiz)
 
 function startQuiz() {
-    console.log('started')
+    console.log(trigQuestions)
+
     beginButton.classList.add('hide')
     quizContainer.classList.remove('hide')
 
@@ -75,9 +76,26 @@ function startQuiz() {
     nextQuestion()
 }   
 
+// async function getJSON() {
+//     const response = await fetch('./assets/js/quiz.json');
+//     const questions = await response.json();
+//     console.log(questions);
+//     return questions;
+// }
+
+// function getJSON() {
+//     fetch('./assets/js/quiz.json')
+//         .then((res) => res.json())
+//         .then((data) => {
+//             return data
+//         })
+// }
+
+/**
+ * Set the next question in quiz area
+ */
 function nextQuestion() {
     setQuestion(shuffledQuestions[currentQuestionIndex])
-
 }
 
 /**

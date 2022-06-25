@@ -1,5 +1,5 @@
 {
-    "trigQuestions": [
+    "questions": [
         {
             "trigImage": "assets/images/questions/question1.webp",
             "trigAnswer": "tan",

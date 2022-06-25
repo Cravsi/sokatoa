@@ -11,6 +11,7 @@ const quizContainer = document.querySelector('#quiz-grid')
 const quizQuestion = document.querySelector('#quiz-grid-question')
 const quizQuestionContainer = document.querySelector('#quiz-buttons')
 const quizImage = document.querySelector('#quiz-image');
+const nextButton = document.querySelector('#next-question')
 let shuffledQuestions
 let currentQuestionIndex
 
@@ -64,6 +65,7 @@ function goToPage(button) {
 }
 
 beginButton.addEventListener('click', startQuiz)
+nextButton.addEventListener('click', nextQuestion)
 
 function startQuiz() {
     beginButton.classList.add('hide')
@@ -101,8 +103,6 @@ function nextQuestion() {
     if (!next.classList.contains('hide')){
         next.classList.add('hide');
     }
-    
-
 }
 
 /**
@@ -154,9 +154,7 @@ function checkAnswer(event) {
             selectedButton.classList.add('incorrect')
         }
         quizQuestionContainer.setAttribute('chosen', '')
-
-        let next = document.querySelector('#next-question')
-        next.classList.remove('hide')
+        nextButton.classList.remove('hide')
     }
 }
 
@@ -164,6 +162,8 @@ function incrementScore () {
     let score = parseInt(document.querySelector('#score').innerHTML);
     document.querySelector('#score').innerHTML = ++score;
 }
+
+
 
 function quizReset () {
 

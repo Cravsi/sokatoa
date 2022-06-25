@@ -65,8 +65,6 @@ function goToPage(button) {
 beginButton.addEventListener('click', startQuiz)
 
 function startQuiz() {
-    console.log(trigQuestions)
-
     beginButton.classList.add('hide')
     quizContainer.classList.remove('hide')
 
@@ -95,7 +93,14 @@ function startQuiz() {
  * Set the next question in quiz area
  */
 function nextQuestion() {
+    resetQuestionArea()
     setQuestion(shuffledQuestions[currentQuestionIndex])
+}
+
+function resetQuestionArea() {
+    while (quizQuestionContainer.firstChild) {
+        quizQuestionContainer.removeChild(quizQuestionContainer.firstChild)
+    }
 }
 
 /**

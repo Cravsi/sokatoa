@@ -192,6 +192,14 @@ body::-webkit-scrollbar {
     outline: none;
 }
 
+.correct {
+    background-color: var(--green);
+}
+
+.incorrect {
+    background-color: var(--red);
+}
+
 /* Common Styles */
 .screen{
     margin-bottom: calc(4rem + 5vh);

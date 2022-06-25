@@ -13,6 +13,7 @@ const quizQuestionContainer = document.querySelector('#quiz-buttons')
 const quizImage = document.querySelector('#quiz-image');
 let shuffledQuestions
 let currentQuestionIndex
+let score = 0 
 
 /**
  * Nav button event listeners
@@ -102,6 +103,10 @@ function nextQuestion() {
  * Removes options from previous question.
  */
 function resetQuestionArea() {
+    if (quizQuestionContainer.hasAttribute('chosen')){
+        quizQuestionContainer.removeAttribute('chosen')
+    }
+    
     while (quizQuestionContainer.firstChild) {
         quizQuestionContainer.removeChild(quizQuestionContainer.firstChild)
     }
@@ -123,8 +128,9 @@ function setQuestion(question) {
         newButton.classList.add('q-buttons')
 
         if (option === question.trigAnswer) {
-            newButton.classList.add('correct')
+            newButton.setAttribute('correct', '')
         }
+                
         newButton.addEventListener('click', checkAnswer);
         quizQuestionContainer.appendChild(newButton)
     })
@@ -132,7 +138,18 @@ function setQuestion(question) {
 
 function checkAnswer(event) {
     let selectedButton = event.target
-    console.log(selectedButton)
+
+    if (!quizQuestionContainer.hasAttribute('chosen')) {
+        if (selectedButton.hasAttribute('correct')) {
+            score += 1
+            selectedButton.classList.add('correct')
+        } else {
+            selectedButton.classList.add('incorrect')
+        }
+        quizQuestionContainer.setAttribute('chosen', '')
+    }
+    
+    
 }
 
 function quizReset () {

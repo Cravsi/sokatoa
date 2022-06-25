@@ -141,6 +141,8 @@ function setQuestion(question) {
         newButton.addEventListener('click', checkAnswer);
         quizQuestionContainer.appendChild(newButton)
     })
+
+    currentQuestionIndex++;
 };
 
 function checkAnswer(event) {

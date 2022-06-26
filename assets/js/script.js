@@ -13,9 +13,10 @@ const quizQuestionContainer = document.querySelector('#quiz-buttons')
 const quizImage = document.querySelector('#quiz-image');
 const nextButton = document.querySelector('#next-question');
 let score = parseInt(document.querySelector('#score').innerHTML);
-let time
+let timer = document.querySelector('#timer');
 let shuffledQuestions
 let currentQuestionIndex
+let time = 0
 
 /**
  * Nav button event listeners
@@ -77,7 +78,7 @@ function startQuiz() {
     currentQuestionIndex = 0
 
     nextQuestion()
-
+    startTimer()
 }   
 
 /**
@@ -154,6 +155,28 @@ function checkAnswer(event) {
         quizQuestionContainer.setAttribute('chosen', '')
         nextButton.classList.remove('hide')
     }
+}
+
+/**
+ * Starts timer and display the current game duration
+ * in 00:00 [minutes:seconds] format.
+ */
+function startTimer() {
+    time = setTimeout(function(){
+        time++
+
+        let seconds
+        let minutes
+        minutes = parseInt(time / 60, 10);
+        seconds = parseInt(time % 60, 10);
+    
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        timer.textContent = `${minutes}:${seconds}`  
+        
+        startTimer()
+    }, 1000)
 }
 
 function incrementScore () {

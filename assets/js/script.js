@@ -19,9 +19,9 @@ let score = parseInt(document.querySelector('#score').innerHTML);
 let scoreReview = document.querySelector('#score-review');
 let timeReview = document.getElementById('time-review');
 let timer = document.querySelector('#timer');
+let time = 0;
 let shuffledQuestions
 let currentQuestionIndex
-let time = 0
 
 /**
  * Nav button event listeners
@@ -30,7 +30,6 @@ let time = 0
 navButtons.forEach(button => {
     button.addEventListener('click', function (event){
         event.preventDefault()
-        console.log(this.dataset.type)
         goToPage(this.dataset.type)
     })
 })
@@ -172,11 +171,10 @@ function checkAnswer(event) {
  * in 00:00 [minutes:seconds] format.
  */
 function startTimer() {
-    time = setTimeout(function(){
-        time++
+    let seconds
+    let minutes
 
-        let seconds
-        let minutes
+    time = setTimeout(function(){ 
         minutes = parseInt(time / 60, 10);
         seconds = parseInt(time % 60, 10);
     
@@ -218,7 +216,6 @@ function quizReset () {
     quizNext.classList.add('hide');
     complete.classList.add('hide');
 
-    time = 0;
     timer.textContent = '00:00'
     score = 0;
     document.querySelector('#score').innerHTML = `0/10`

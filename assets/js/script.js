@@ -12,6 +12,9 @@ const quizQuestion = document.querySelector('#quiz-grid-question')
 const quizQuestionContainer = document.querySelector('#quiz-buttons')
 const quizImage = document.querySelector('#quiz-image');
 const nextButton = document.querySelector('#next-question');
+const resetButton = document.querySelector('#quiz-reset');
+const complete = document.querySelector('#quiz-complete');
+const quizNext = document.querySelector('[data-type="quiz-next"]');
 let score = parseInt(document.querySelector('#score').innerHTML);
 let scoreReview = document.querySelector('#score-review');
 let timeReview = document.getElementById('time-review');
@@ -202,8 +205,6 @@ function showReview() {
     quizContainer.classList.add('hide')
     nextButton.classList.add('hide')
     
-    let quizNext = document.querySelector('[data-type="quiz-next"]')
-    let complete = document.querySelector('#quiz-complete')
     quizNext.classList.remove('hide')
     complete.classList.remove('hide')
     
@@ -211,6 +212,18 @@ function showReview() {
     timeReview.innerHTML = `<h2>Time = ${timer.innerHTML}</h2>`
 }
 
-function quizReset () {
+resetButton.addEventListener('click', quizReset);
 
+function quizReset () {
+    quizNext.classList.add('hide');
+    complete.classList.add('hide');
+
+    time = 0;
+    timer.textContent = '00:00'
+    score = 0;
+    document.querySelector('#score').innerHTML = `0/10`
+
+    beginButton.classList.remove('hide');
+    quizContainer.classList.add('hide');
+    goToPage('review-back');
 };

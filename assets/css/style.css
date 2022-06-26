@@ -170,6 +170,9 @@ body::-webkit-scrollbar {
     grid-area: image;
     max-height: 40vh;
     max-width: 100% !important;
+
+    display: flex;
+    justify-content: center;
 }
 #quiz-grid-question {
     grid-area: question;
@@ -241,6 +244,15 @@ body::-webkit-scrollbar {
 /* Review Screen Styling */
 #review-screen {
     flex-direction: column;
+}
+
+#review-container {
+    flex-direction: column;
+    justify-content: center;
+}
+
+#quiz-reset {
+    margin-top: 2rem;
 }
 
 /* Common Styles */

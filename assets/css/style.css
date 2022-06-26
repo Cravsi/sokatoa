@@ -161,7 +161,7 @@ body::-webkit-scrollbar {
 
 #quiz-grid-image {
     grid-area: image;
-    max-height: 500px;
+    max-height: 400px;
 }
 #quiz-grid-question {
     grid-area: question;
@@ -204,6 +204,23 @@ body::-webkit-scrollbar {
     background-color: hsl(var(--hue-blue), 100%, 30%);
     border: 1px solid hsl(var(--hue-blue), 100%, 60%);
     color: var(--white);
+}
+
+.next-button {
+    color: var(--white);
+    background-color: var(--black);
+    border: 1px solid var(--white);
+    padding: 8px 22px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin: 0 1rem;
+    display: inline-block;
+}
+
+.next-button:hover {
+    color: var(--black);
+    background-color: var(--white);
+    border: 1px solid var(--black);
 }
 
 .correct {

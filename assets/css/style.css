@@ -209,6 +209,10 @@ body::-webkit-scrollbar {
     color: var(--white);
 }
 
+#quiz-complete {
+    padding-top: 10vh;
+}
+
 .next-button {
     color: var(--white);
     background-color: var(--black);
@@ -232,6 +236,11 @@ body::-webkit-scrollbar {
 
 .incorrect {
     background-color: var(--red);
+}
+
+/* Review Screen Styling */
+#review-screen {
+    flex-direction: column;
 }
 
 /* Common Styles */
@@ -275,6 +284,12 @@ body::-webkit-scrollbar {
     color: var(--black);
     background-color: var(--white);
     border: 1px solid var(--black);
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Footer Styling */

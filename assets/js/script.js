@@ -11,7 +11,8 @@ const quizContainer = document.querySelector('#quiz-grid')
 const quizQuestion = document.querySelector('#quiz-grid-question')
 const quizQuestionContainer = document.querySelector('#quiz-buttons')
 const quizImage = document.querySelector('#quiz-image');
-const nextButton = document.querySelector('#next-question')
+const nextButton = document.querySelector('#next-question');
+let score = parseInt(document.querySelector('#score').innerHTML);
 let shuffledQuestions
 let currentQuestionIndex
 
@@ -81,12 +82,16 @@ function startQuiz() {
  * Set the next question in quiz area
  */
 function nextQuestion() {
-    resetQuestionArea()
-    setQuestion(shuffledQuestions[currentQuestionIndex])
+    if (currentQuestionIndex === shuffledQuestions.length) {
+        showReview();
+    } else {
+        resetQuestionArea()
+        setQuestion(shuffledQuestions[currentQuestionIndex])
 
-    let next = document.querySelector('#next-question')
-    if (!next.classList.contains('hide')){
+        let next = document.querySelector('#next-question')
+        if (!next.classList.contains('hide')){
         next.classList.add('hide');
+        }
     }
 }
 
@@ -130,6 +135,10 @@ function setQuestion(question) {
     currentQuestionIndex++;
 };
 
+/**
+ * Handles quiz response when question is answered. 
+ * @param {*} event 
+ */
 function checkAnswer(event) {
     let selectedButton = event.target
 
@@ -146,8 +155,21 @@ function checkAnswer(event) {
 }
 
 function incrementScore () {
-    let score = parseInt(document.querySelector('#score').innerHTML);
     document.querySelector('#score').innerHTML = ++score;
+}
+
+function showReview() {
+    quizContainer.classList.add('hide')
+    nextButton.classList.add('hide')
+    
+    let quizNext = document.querySelector('[data-type="quiz-next"]')
+    let complete = document.querySelector('#quiz-complete')
+    quizNext.classList.remove('hide')
+    complete.classList.remove('hide')
+
+    let scoreReview = document.querySelector('#score-review');
+    scoreReview.innerHTML = `
+    <h2><span>Score = ${score}  </span><span>   Time = ${time}</span></h2>`
 }
 
 function quizReset () {

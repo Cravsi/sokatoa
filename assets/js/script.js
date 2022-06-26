@@ -13,6 +13,8 @@ const quizQuestionContainer = document.querySelector('#quiz-buttons')
 const quizImage = document.querySelector('#quiz-image');
 const nextButton = document.querySelector('#next-question');
 let score = parseInt(document.querySelector('#score').innerHTML);
+let scoreReview = document.querySelector('#score-review');
+let timeReview = document.getElementById('time-review');
 let timer = document.querySelector('#timer');
 let shuffledQuestions
 let currentQuestionIndex
@@ -87,6 +89,7 @@ function startQuiz() {
 function nextQuestion() {
     if (currentQuestionIndex === shuffledQuestions.length) {
         showReview();
+        stopTimer();
     } else {
         resetQuestionArea()
         setQuestion(shuffledQuestions[currentQuestionIndex])
@@ -179,6 +182,10 @@ function startTimer() {
     }, 1000)
 }
 
+function stopTimer() {
+    clearTimeout(time);
+}
+
 function incrementScore () {
     document.querySelector('#score').innerHTML = `${++score}/10`;
 }
@@ -191,10 +198,9 @@ function showReview() {
     let complete = document.querySelector('#quiz-complete')
     quizNext.classList.remove('hide')
     complete.classList.remove('hide')
-
-    let scoreReview = document.querySelector('#score-review');
-    scoreReview.innerHTML = `
-    <h2><span>Score = ${score}/10  </span><span>   Time = ${time}</span></h2>`
+    
+    scoreReview.innerHTML = `<h2>Score = ${score}/10</h2>`
+    timeReview.innerHTML = `<h2>Time = ${timer.innerHTML}</h2>`
 }
 
 function quizReset () {

@@ -57,4 +57,4 @@ const trigQuestions = [{
     trigAnswer: "cos",
     trigOptions: ["sin", "cos", "tan"],
     trigQuestion: "What is the correct trigonometric funtion to find angle theta?"
-}]
+}];

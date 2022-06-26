@@ -180,6 +180,7 @@ The site is constructed to be as user-friendly as possible. Upon arriving on the
 ### Langauges
  - CSS
  - HTML
+ - JavaScript
  <br>
 
 ### Frameworks & Tools
@@ -188,54 +189,67 @@ The site is constructed to be as user-friendly as possible. Upon arriving on the
 - [GitPod](https://www.gitpod.io/)
 - [Balsamiq](https://balsamiq.com/)
 - [Google Fonts](https://fonts.google.com/)
-- [Awesome Fonts](https://fontawesome.com/)
 - [Pexels](https://www.pexels.com/)
-- [Unsplash](https://unsplash.com/)
 - [TinyPNG](https://tinypng.com/)
 - [Convertio](https://convertio.co/jpg-webp/)
 <br>
 
 ## Features
-This website consists of .... page, with .... sections:
+This website consists of 1 page, with 4 sections:
 <br>
 
-### Logo and Navigation Bar
+### Header
  - The logo and name are displayed to confirm the user is on the correct site.
- - A nav-bar is provided for quick navigation throughout the website.
- - The current webpage is highlighted within the nav-bar.
 <figure>
-    <img src="docs/features/feature-header.png" alt="Website Header">
+    <img src="docs/features/readme-head.png" alt="Website Header">
 </figure>
 
 ### Footer
-- Three sections: Social Media Link, Contact Information, A logo linking back to the home section.
+- Social Media Links
 <figure>
     <img src="docs/features/feature-footer.png" alt="Website Footer">
 </figure>
 
-### Hero-Image
-- Introduces the user to the quartet.
+### Landing Section
+- Introduces the user to the site and basic trig
 <figure>
-    <img src="docs/features/feature-hero-image.png" alt="the string quartet">
+    <img src="docs/features/landingSection-feature.png" alt="the landing section">
 </figure>
 
-### Blurb
-- Provides some general background information on the quartet.
+### Learn Section
+- Provides some basic information to teach the user the basic of triginometric functions
 <figure>
-    <img src="docs/features/feature-blurb.png" alt="the blurb">
+    <img src="docs/features/learnSection-feature.png" alt="the learn section">
 </figure>
 
-### Performances
-- Displays some past performances by the band to the users.
+### Initial Quiz Section
+- The format of the quiz section when the user first lands on the quiz section. 
 <figure>
-    <img src="docs/features/feature-performance.png" alt="past performances">
+    <img src="docs/features/quiz1-feature.png" alt="initial quiz section">
 </figure>
 
-### Functions
-- Describes to the user the type of events the quartet plays for.
-- Provides reviews from previous patrons for each event type.
+### Intermediate Quiz Section
+- The format of the quiz section when the user begins the quiz 
 <figure>
-    <img src="docs/features/feature-functions.png" alt="Corporate Function">
+    <img src="docs/features/quiz2-feature.png" alt="intermediate quiz section">
+</figure>
+
+### Final Quiz Section
+- The format of the quiz section when the user completes the quiz 
+<figure>
+    <img src="docs/features/quiz3-feature.png" alt="final quiz section">
+</figure>
+
+### Final Quiz Section
+- The format of the quiz section when the user completes the quiz 
+<figure>
+    <img src="docs/features/quiz3-feature.png" alt="final quiz section">
+</figure>
+
+### Review Section
+- The review screen where the user can review the results of the quiz.
+<figure>
+    <img src="docs/features/review-feature.png" alt="review section">
 </figure>
 
 ### Future Features

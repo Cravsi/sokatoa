@@ -72,6 +72,9 @@ function goToPage(button) {
 beginButton.addEventListener('click', startQuiz)
 nextButton.addEventListener('click', nextQuestion)
 
+/**
+ * Starts the quiz, quiz timer, and sets the first question.
+ */
 function startQuiz() {
     beginButton.classList.add('hide')
     quizContainer.classList.remove('hide')
@@ -84,7 +87,8 @@ function startQuiz() {
 }   
 
 /**
- * Set the next question in quiz area
+ * Set the next question in quiz area. Ends quiz when all questions
+ * have been asked.
  */
 function nextQuestion() {
     if (currentQuestionIndex === shuffledQuestions.length) {
@@ -190,6 +194,10 @@ function incrementScore () {
     document.querySelector('#score').innerHTML = `${++score}/10`;
 }
 
+/**
+ * Gives the user access to the review section. Updates the 
+ * time and score sections on the review page.
+ */
 function showReview() {
     quizContainer.classList.add('hide')
     nextButton.classList.add('hide')

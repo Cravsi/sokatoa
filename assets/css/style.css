@@ -74,10 +74,6 @@ section {
     border: 2px solid var(--black);
 }
 
-img {
-    width: 100%;
-}
-
 /* Hide Scroll Bar */
 body {
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
@@ -159,21 +155,6 @@ body::-webkit-scrollbar {
     box-shadow:  2px 2px var(--grey) inset;
 }
 
-#quiz-grid-image {
-    grid-area: image;
-    max-height: 400px;
-}
-#quiz-grid-question {
-    grid-area: question;
-}
-#quiz-buttons {
-    grid-area: buttons;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 1rem;
-    margin: 20px 0;
-}
-
 #quiz-grid {
     display: grid;
     grid-template-columns: auto auto;
@@ -185,8 +166,30 @@ body::-webkit-scrollbar {
     "buttons buttons";
 }
 
+#quiz-grid-image {
+    grid-area: image;
+    max-height: 40vh;
+    max-width: 100% !important;
+}
+#quiz-grid-question {
+    grid-area: question;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+#quiz-buttons {
+    grid-area: buttons;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 20px 0;
+}
+
 #quiz-image{
-    max-width: auto;
+    max-width: 100%;
     max-height: 100%;
 }
 
@@ -197,7 +200,7 @@ body::-webkit-scrollbar {
     padding: 5px 10px;
     outline: none;
     max-height: 70px;
-    max-width: 250px;
+    width: 50%;
 }
 
 .q-buttons:hover {
@@ -292,7 +295,7 @@ a>i {
 @media only screen and (min-width: 768px) {
     #quiz-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 2fr;
         grid-template-rows: minmax(5rem, auto);
         grid-template-areas: 
         "question question image"

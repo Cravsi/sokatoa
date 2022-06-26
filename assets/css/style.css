@@ -235,6 +235,8 @@ body::-webkit-scrollbar {
 .screen{
     margin-bottom: calc(4rem + 5vh);
     max-width: 80%;
+    min-width: 50vw;
+    min-height: 50vh;
     position: relative;
     padding: 0 1rem 2rem 1rem;
     font-size: 14px;

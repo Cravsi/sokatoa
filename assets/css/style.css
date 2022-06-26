@@ -161,6 +161,7 @@ body::-webkit-scrollbar {
 
 #quiz-grid-image {
     grid-area: image;
+    max-height: 500px;
 }
 #quiz-grid-question {
     grid-area: question;
@@ -184,12 +185,19 @@ body::-webkit-scrollbar {
     "buttons buttons";
 }
 
+#quiz-image{
+    max-width: auto;
+    max-height: 100%;
+}
+
 .q-buttons {
     background-color: hsl(var(--hue-blue), 100%, 60%);
     border: 1px solid hsl(var(--hue-blue), 100%, 30%);
     border-radius: 5px;
     padding: 5px 10px;
     outline: none;
+    max-height: 70px;
+    max-width: 250px;
 }
 
 .q-buttons:hover {

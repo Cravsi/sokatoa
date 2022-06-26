@@ -100,35 +100,32 @@ Link to deployed [site](https://cravsi.github.io/...../).
 ## Design
 
 ### Design Choice
-This webpage has been designed to be visually interesting and provide the readers the information required for them to feel they know enough about ......
+This webpage has been designed to be visually interesting and provide the readers the information required for them to feel confident in their understanding of trigonometric functions.
 <br>
 
 ### Colour Palette
-The chosen colour palette was appears .......
+The chosen colour palette was picked to be simple to emphasise the content with more vibrant colours to indicate incorrect and correct answers in the quiz.
 <br>
-......
 <figure>
-    <img src="g" alt="">
+    <img src="assets/docs/features/colour-palette.png" alt="The colour palette used for the website">
     <figcaption>The colour palette used for the website</figcaption>
 </figure>
 <br>
 
 ### Fonts
-The *Oswald* font was used for headings.
-<br>
-The *Open Sans* font was used for bodies of text as it is considered complimentary to *Oswald*.
+The *Noto Sans* font was used for headings and text body.
 <br>
 
 ### Structure
 
 <br>
-The site is constructed to be very user-friendly. Upon arriving on the site the user is asked what activity they would like to do. The site is spread across three seperate pages:
+The site is constructed to be as user-friendly as possible. Upon arriving on the site the user is given a brief introduction to the site and its purpose before the user navigates to the next page. The site is spread across 4 seperate sections on a single html page:
 
-- A home-page with four diffent views:
-    - A menu to choose the activity.
-    - one page where to user can learn.
-    - one page with a quiz.
-    - one page with the quiz results.
+- On the index.html page:
+    - A landing and introductory section.
+    - one section where to user can learn basic trigonometry.
+    - one secion with a quiz.
+    - one section with the quiz results.
 - A contact form.
 - A 404 page.
 <br>

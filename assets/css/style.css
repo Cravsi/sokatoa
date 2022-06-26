@@ -114,6 +114,7 @@ body::-webkit-scrollbar {
 #landing-screen img {
     margin: 0 20%;
     max-width: 100%;
+    max-height: 30rem;
 }
 
 #landing-screen p {
@@ -127,7 +128,7 @@ body::-webkit-scrollbar {
 }
 
 .learn-img img {
-    width: 70%;
+    width: 60%;
 }
 
 /* Quiz Screen Styling */

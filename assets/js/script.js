@@ -13,6 +13,7 @@ const quizQuestionContainer = document.querySelector('#quiz-buttons')
 const quizImage = document.querySelector('#quiz-image');
 const nextButton = document.querySelector('#next-question');
 let score = parseInt(document.querySelector('#score').innerHTML);
+let time
 let shuffledQuestions
 let currentQuestionIndex
 
@@ -76,6 +77,7 @@ function startQuiz() {
     currentQuestionIndex = 0
 
     nextQuestion()
+
 }   
 
 /**
@@ -155,7 +157,7 @@ function checkAnswer(event) {
 }
 
 function incrementScore () {
-    document.querySelector('#score').innerHTML = ++score;
+    document.querySelector('#score').innerHTML = `${++score}/10`;
 }
 
 function showReview() {
@@ -169,7 +171,7 @@ function showReview() {
 
     let scoreReview = document.querySelector('#score-review');
     scoreReview.innerHTML = `
-    <h2><span>Score = ${score}  </span><span>   Time = ${time}</span></h2>`
+    <h2><span>Score = ${score}/10  </span><span>   Time = ${time}</span></h2>`
 }
 
 function quizReset () {

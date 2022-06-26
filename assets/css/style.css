@@ -305,6 +305,12 @@ body::-webkit-scrollbar {
     justify-content: center;
 }
 
+/* 404 page styling */
+
+main.flex-container {
+    height: 60vh;
+}
+
 /* Footer Styling */
 a>i {
     font-size: 160%;

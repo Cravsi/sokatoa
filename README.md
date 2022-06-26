@@ -462,4 +462,4 @@ Explanations for the Sohcahtoa memnomic were taken from <a href="https://calcwor
 <br>
 
 ## Acknowledgements
-I would like to thank my mentor Simen Dehlin for his mentorship throughout the project and Chris Quinn for pointing out the last few things and helping me get this first project over the line. I would also like to thank Mo and Mike Sheehan, the cohort mentor and facilitator for helping out wherever I had any questions. Lastly, thanks to all my friends and family who were happy to help out with the device testing.
+I would like to thank my mentor Simen Dehlin for his mentorship throughout the project. I would also like to thank Mo and Mike Sheehan, the cohort mentor and facilitator for helping out wherever I had any questions. Lastly, thanks to all my friends and family who were happy to help out with the device testing.

@@ -385,7 +385,7 @@ The website performed well on all these browsers. No unexpected errors were foun
 
 | **Feature** | **Action** | **Expected Result** | **Result** |
 | ----- | ----- | ----- | ----- |
-| Learn Section | User loads the page | User is given a brief introduction to the site | Works as expected |
+| Landing Section | User loads the page | User is given a brief introduction to the site | Works as expected |
 
 <details><summary>Screenshots</summary>
     <figure>
@@ -399,15 +399,16 @@ The website performed well on all these browsers. No unexpected errors were foun
 
 | **Feature** | **Action** | **Expected Result** | **Result** |
 | ----- | ----- | ----- | ----- |
+| Learn Section | Navigate to learn section, scroll through page | Read through the basics of trig | Works as expected |
 
 <details><summary>Screenshots</summary>
     <figure>
-        <img src=""
-            alt="">
+        <img src="docs/testing/scroll-click-landing.png"
+            alt="User navigates to learn page">
     </figure>
     <figure>
-        <img src=""
-            alt="">
+        <img src="docs/testing/user-story-3.png"
+            alt="User browses learning material">
     </figure>
 </details>
 <br>
@@ -416,15 +417,16 @@ The website performed well on all these browsers. No unexpected errors were foun
 
 | **Feature** | **Action** | **Expected Result** | **Result** |
 | ----- | ----- | ----- | ----- |
+| Quiz Section | User navigates to quiz section, begins quiz | User can complete the quiz | Works as expected |
 
 <details><summary>Screenshots</summary>
     <figure>
-        <img src=""
-            alt="">
+        <img src="docs/testing/scroll-click-learn.png"
+            alt="User navigates to quiz page">
     </figure>
     <figure>
-        <img src=""
-            alt="">
+        <img src="docs/testing/user-story-4.png"
+            alt="User can complete quiz">
     </figure>
 </details>
 <br>

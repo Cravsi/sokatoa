@@ -4,10 +4,10 @@
 
 For my **Portfolio Project 2** on **Code Institute's 5 Project Course** I have created this fun and informational website focused on teaching student's some foundational trigonometic principles. The site includes useful notes and quizes to reinforce the student's learning
 
-Link to deployed [site](https://cravsi.github.io/...../).
+Link to deployed [site](https://cravsi.github.io/sokatoa/).
 
 <figure>
-    <img src="" alt="">
+    <img src="docs/testing/amiresponsive-docs.png" alt="site responsiveness">
 </figure>
 
 ## Table of Contents

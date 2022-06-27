@@ -122,14 +122,13 @@ The *Noto Sans* font was used for headings and text body.
 ### Structure
 
 <br>
-The site is constructed to be as user-friendly as possible. Upon arriving on the site the user is given a brief introduction to the site and its purpose before the user navigates to the next page. The site is spread across 4 seperate sections on a single html page:
+The site is constructed to be as user-friendly as possible. Upon arriving on the site the user is given a brief introduction to the site and its purpose before the user navigates to the next page. The site is spread across 2 pages:
 
 - On the index.html page:
     - A landing and introductory section.
     - one section where to user can learn basic trigonometry.
     - one secion with a quiz.
     - one section with the quiz results.
-- A contact form.
 - A 404 page.
 <br>
 
@@ -235,6 +234,12 @@ This website consists of 1 page, with 4 sections:
     <img src="docs/features/review-feature.png" alt="review section">
 </figure>
 
+### 404 Message
+- Provides a way for the user to return to the main site after clicking a broken link.
+<figure>
+    <img src="docs/features/404-feature.png" alt="404 page">
+</figure>
+
 ### Future Features
  - An interactive right angle triangle to demostrate the effects changing the triangle properties has.
  - An introduction to the unit circle.
@@ -286,16 +291,28 @@ The WAVE WebAIM web accessibility evaluation tool is used to ensure the site has
 
 ### Performance
 Google Lighthouse, found in Google Chrome Dev tools was used to test the performance of the site.
-<details><summary>Lighthouse Desktop Performance</summary>
+<details><summary>index.html Lighthouse Desktop Performance</summary>
     <figure>
         <img src="docs/testing/performance-desktop-testing.png"
-            alt="Desktop Performance">
+            alt="index page Desktop Performance">
     </figure>
 </details>
-<details><summary>Lighthouse Mobile Performance</summary>
+<details><summary>index.html Lighthouse Mobile Performance</summary>
     <figure>
         <img src="docs/testing/performance-mobile-testing.png"
-            alt="Mobile Performance">
+            alt="index page Mobile Performance">
+    </figure>
+</details>
+<details><summary>404.html Lighthouse Desktop Performance</summary>
+    <figure>
+        <img src="docs/testing/performance-404-desktop-testing.png"
+            alt="404 page Desktop Performance">
+    </figure>
+</details>
+<details><summary>404.html Lighthouse Mobile Performance</summary>
+    <figure>
+        <img src="docs/testing/performance-404-mobile-testing.png"
+            alt="404 page Mobile Performance">
     </figure>
 </details>
 <br>

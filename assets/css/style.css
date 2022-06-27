@@ -328,6 +328,7 @@ a>i {
 
 .footer-list li {
     margin: 1rem 2rem;
+    display: inline-block;
 }
 
 /* Media Queries */

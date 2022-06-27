@@ -58,6 +58,11 @@ header {
     background-color: var(--white);
 }
 
+main {
+    display: flex;
+    justify-content: center;
+}
+
 footer {
     display: flex;
     align-items: center;
@@ -261,7 +266,7 @@ body::-webkit-scrollbar {
 /* Common Styles */
 .screen{
     margin-bottom: calc(4rem + 5vh);
-    max-width: 80%;
+    max-width: 100rem;
     min-width: 50vw;
     min-height: 50vh;
     position: relative;
@@ -359,8 +364,8 @@ a>i {
     }
 
     #quiz-grid-image {
-        max-height: 25rem;
-        max-width: 25rem;
+        height: 25rem;
+        width: 25rem;
     }
 }
 /* Button Animations - taken from https://ianlunn.github.io/Hover/*/

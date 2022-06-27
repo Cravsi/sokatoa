@@ -83,18 +83,20 @@ Link to deployed [site](https://cravsi.github.io/sokatoa/).
 
 ### User Stories
 
+#### First Time User
+1. As a first-time user, I want to know I am on the correct site.
+2. As a first-time user, I want to know what the purpose of the site is. 
+<br>
+
 #### User
-1. As a user, I want to learn the basics of trigonometric functions.
-2. As a user, I want to test my knowledge of trigonometric functions.
-3. As a user, I want to see how many correct/incorrect questions I've scored.
-4. As a user, when I answer incorrectly I want to know what the correct answer is.
-5. As a user, I want to answer questions with both my keyboard and/or mouse.
+3. As a user, I want to learn the basics of trigonometric functions.
+4. As a user, I want to test my knowledge of trigonometric functions.
+5. As a user, I want to see how many correct/incorrect questions I've scored.
 6. As a user, I want to provide feedback to the site. 
 <br>
 
 #### Site Owner
 7. As the site owner, I want users to be able to find me on social media.
-8. As the site owner, I want to gather feedback from the user.
 <br>
 
 ## Design
@@ -334,16 +336,13 @@ Google Lighthouse, found in Google Chrome Dev tools was used to test the perform
     - Footer scaling remains functional down to a minimum screen-width of 180px.
     - All social media link work as expected.
 
-
 <details><summary>Fixes after local testing.</summary>
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
-| During the quiz differing image sizes can cause the option buttons to jump around | ----------- |
-
-
-
+| During the quiz differing image sizes can cause the option buttons to jump around | A fix likely unworthwhile as jumping only occurs when width is smaller than any known devices |
 </details>
+
 <br>
 
 ### Device Testing
@@ -366,9 +365,37 @@ The website performed well on all these browsers. No unexpected errors were foun
 <br>
 
 ### Testing User Stories
-- 1. As a first-time user, ....
-
 <br>
+
+1. As a first-time user, I want to know I am on the correct site.
+
+| **Feature** | **Action** | **Expected Result** | **Result** |
+| ----- | ----- | ----- | ----- |
+| Header Section | User loads the page | Find name of site and logo clearly visible | Works as expected |
+
+<details><summary>Screenshots</summary>
+    <figure>
+        <img src="docs/testing/user-story-1.png"
+            alt="Testing user story 1">
+    </figure>
+</details>
+<br>
+
+2. As a first-time user, I want to know what the purpose of the site is. 
+
+| **Feature** | **Action** | **Expected Result** | **Result** |
+| ----- | ----- | ----- | ----- |
+| Learn Section | User loads the page | User is given a brief introduction to the site | Works as expected |
+
+<details><summary>Screenshots</summary>
+    <figure>
+        <img src="docs/testing/user-story-2.png"
+            alt="Testing user story 2">
+    </figure>
+</details>
+<br>
+
+3. As a user, I want to learn the basics of trigonometric functions.
 
 | **Feature** | **Action** | **Expected Result** | **Result** |
 | ----- | ----- | ----- | ----- |
@@ -385,6 +412,56 @@ The website performed well on all these browsers. No unexpected errors were foun
 </details>
 <br>
 
+4. As a user, I want to test my knowledge of trigonometric functions.
+
+| **Feature** | **Action** | **Expected Result** | **Result** |
+| ----- | ----- | ----- | ----- |
+
+<details><summary>Screenshots</summary>
+    <figure>
+        <img src=""
+            alt="">
+    </figure>
+    <figure>
+        <img src=""
+            alt="">
+    </figure>
+</details>
+<br>
+
+5. As a user, I want to see how many correct/incorrect questions I've scored.
+
+| **Feature** | **Action** | **Expected Result** | **Result** |
+| ----- | ----- | ----- | ----- |
+
+<details><summary>Screenshots</summary>
+    <figure>
+        <img src=""
+            alt="">
+    </figure>
+    <figure>
+        <img src=""
+            alt="">
+    </figure>
+</details>
+<br>
+
+6. As a user, I want to provide feedback to the site. 
+7. As the site owner, I want users to be able to find me on social media.
+
+| **Feature** | **Action** | **Expected Result** | **Result** |
+| ----- | ----- | ----- | ----- |
+
+<details><summary>Screenshots</summary>
+    <figure>
+        <img src=""
+            alt="">
+    </figure>
+    <figure>
+        <img src=""
+            alt="">
+    </figure>
+</details>
 <br>
 
 ## Bugs

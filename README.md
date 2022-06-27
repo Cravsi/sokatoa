@@ -92,11 +92,12 @@ Link to deployed [site](https://cravsi.github.io/sokatoa/).
 3. As a user, I want to learn the basics of trigonometric functions.
 4. As a user, I want to test my knowledge of trigonometric functions.
 5. As a user, I want to see how many correct/incorrect questions I've scored.
-6. As a user, I want to provide feedback to the site. 
+6. As a user, I want to reset the quiz and try again.
+7. As a user, I want to provide feedback to the site. 
 <br>
 
 #### Site Owner
-7. As the site owner, I want users to be able to find me on social media.
+8. As the site owner, I want users to be able to find me on social media.
 <br>
 
 ## Design
@@ -432,36 +433,35 @@ The website performed well on all these browsers. No unexpected errors were foun
 <br>
 
 5. As a user, I want to see how many correct/incorrect questions I've scored.
+6. As a user, I want to reset the quiz and try again.
 
 | **Feature** | **Action** | **Expected Result** | **Result** |
 | ----- | ----- | ----- | ----- |
+| Review Section | Upon completion of quiz the user can review answers | Score and time are displayed to user. An option to reset the quiz is provided | Works as expected |
 
 <details><summary>Screenshots</summary>
     <figure>
-        <img src=""
-            alt="">
+        <img src="docs/testing/navigate-review.png"
+            alt="User navigates to the review section">
     </figure>
     <figure>
-        <img src=""
-            alt="">
+        <img src="docs/testing/user-story-5&6.png"
+            alt="User can review results and reset the quiz">
     </figure>
 </details>
 <br>
 
-6. As a user, I want to provide feedback to the site. 
-7. As the site owner, I want users to be able to find me on social media.
+7. As a user, I want to provide feedback to the site. 
+8. As the site owner, I want users to be able to find me on social media.
 
 | **Feature** | **Action** | **Expected Result** | **Result** |
 | ----- | ----- | ----- | ----- |
+| Social Media Links | User navigates to site-owners socials | Social media links redirect to relevant sites | Works as expected |
 
 <details><summary>Screenshots</summary>
     <figure>
-        <img src=""
-            alt="">
-    </figure>
-    <figure>
-        <img src=""
-            alt="">
+        <img src="docs/testing/user-story-7&8.png"
+            alt="User navigates to social media links">
     </figure>
 </details>
 <br>

@@ -180,6 +180,11 @@ The site is constructed to be as user-friendly as possible. Upon arriving on the
 - [Pexels](https://www.pexels.com/)
 - [TinyPNG](https://tinypng.com/)
 - [Convertio](https://convertio.co/jpg-webp/)
+- [JSHint](https://jshint.com/)
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)
+- [W3C HTML Checker](https://validator.w3.org/nu/)
+- [W3C Jigsaw CSS validation service](https://jigsaw.w3.org/css-validator/)
+- [WAVE WebAIM web accessibility evaluation tool](https://wave.webaim.org/)
 <br>
 
 ## Features

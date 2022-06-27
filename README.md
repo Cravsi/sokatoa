@@ -2,7 +2,7 @@
 
 # Sokatoa
 
-For my **Portfolio Project 2** on **Code Institute's 5 Project Course** I have created this fun and informational website focused on teaching student's some foundational trigonometic principles. The site includes useful notes and quizes to reinforce the student's learning
+For my **Portfolio Project 2** on **Code Institute's 5 Project Course** I have created this informational website focused on teaching students some foundational trigonometic principles. The site includes useful notes and a quiz to reinforce the student's learning.
 
 Link to deployed [site](https://cravsi.github.io/sokatoa/).
 

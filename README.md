@@ -110,7 +110,7 @@ This webpage has been designed to be visually interesting and provide the reader
 The chosen colour palette was picked to be simple to emphasise the content with more vibrant colours to indicate incorrect and correct answers in the quiz.
 <br>
 <figure>
-    <img src="assets/docs/features/colour-palette.png" alt="The colour palette used for the website">
+    <img src="docs/features/colour-palette.png" alt="The colour palette used for the website">
     <figcaption>The colour palette used for the website</figcaption>
 </figure>
 <br>
@@ -160,20 +160,6 @@ The site is constructed to be as user-friendly as possible. Upon arriving on the
         <img src="docs/wireframes/review-screen.png"
             alt="A wireframe for the review screen">
         <figcaption>A wireframe for the review screen on mobile & browser</figcaption>
-    </figure>
-</details>
-<details><summary> <b>Contact form screen</b> </summary>
-    <figure>
-        <img src="docs/wireframes/contact.png"
-            alt="A wireframe for the contact form page">
-        <figcaption>A wireframe for the contact form page on mobile & browser</figcaption>
-    </figure>
-</details>
-<details><summary> <b>Form confirmation screen</b> </summary>
-    <figure>
-        <img src="docs/wireframes/form-conformation.png"
-            alt="A wireframe for the form confirmation screen">
-        <figcaption>A wireframe for the form confirmation screen on mobile & browser</figcaption>
     </figure>
 </details>
 <br>
@@ -243,12 +229,6 @@ This website consists of 1 page, with 4 sections:
     <img src="docs/features/quiz3-feature.png" alt="final quiz section">
 </figure>
 
-### Final Quiz Section
-- The format of the quiz section when the user completes the quiz 
-<figure>
-    <img src="docs/features/quiz3-feature.png" alt="final quiz section">
-</figure>
-
 ### Review Section
 - The review screen where the user can review the results of the quiz.
 <figure>
@@ -296,13 +276,13 @@ The WAVE WebAIM web accessibility evaluation tool is used to ensure the site has
 Google Lighthouse, found in Google Chrome Dev tools was used to test the performance of the site.
 <details><summary>Lighthouse Desktop Performance</summary>
     <figure>
-        <img src="docs/assets/performance-desktop-testing.png"
+        <img src="docs/testing/performance-desktop-testing.png"
             alt="Desktop Performance">
     </figure>
 </details>
 <details><summary>Lighthouse Mobile Performance</summary>
     <figure>
-        <img src="docs/assets/performance-mobile-testing.png"
+        <img src="docs/testing/performance-mobile-testing.png"
             alt="Mobile Performance">
     </figure>
 </details>

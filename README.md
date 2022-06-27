@@ -334,15 +334,19 @@ Google Lighthouse, found in Google Chrome Dev tools was used to test the perform
 ### Device Testing
 In addition to various devices resolutions being testing through the **Responsive Design Mode** tool in Mozilla Firefox the following devices were used to test the site:
 - Moto G8           [720x1560px]
+- iPhone 13         [1170x2532px]
+- iPhone 11         [1792x828px]
+- iPhone XR         [828x1792px]
+- Galaxy a51        [1080x2400px]
 
 The website performed well on all these devices. No unexpected errors were found and responsiveness was good.
 <br>
 
 ### Browser Compatibility
 The following devicese were used to test the site:
-- Mozilla Firefox   v100.0. .....
-- Google Chrome     v101.0. ....
-- Microsoft Edge    v100.0. ....
+- Mozilla Firefox   v101.0.1
+- Google Chrome     v103.0.5060.53
+- Microsoft Edge    v103.0.1264.37
 The website performed well on all these browsers. No unexpected errors were found and responsiveness was good.
 <br>
 

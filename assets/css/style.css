@@ -31,13 +31,14 @@ body {
     min-height: 100vh;
     background-color: var(--white);
     font-family: 'Noto Sans', sans-serif;
+    line-height: 2rem
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Sans', sans-serif;
     letter-spacing: 0.1875rem;
     text-align: center;
-    font-size: large;
+    font-size: medium;
 }
 
 body::before {
@@ -112,13 +113,16 @@ body::-webkit-scrollbar {
 }
 
 #landing-screen img {
-    margin: 0 20%;
     max-width: 100%;
     max-height: 30rem;
 }
 
 #landing-screen p {
     padding: 2rem 3rem 1rem 3rem;
+}
+
+#landing-container {
+    flex-direction: column;
 }
 
 /* Learn Screen Styling */
@@ -264,7 +268,7 @@ body::-webkit-scrollbar {
     min-height: 50vh;
     position: relative;
     padding: 0 1rem 2rem 1rem;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .screen h2 {
@@ -338,12 +342,18 @@ a>i {
     }
 
     #landing-screen img {
-        margin: 0 20%;
+        margin: 0 3%;
         max-width: 50%;
     }
+    #landing-container {
+        flex-direction: row-reverse;
+    }
 
-    #learn-screen img {
+    #landing-container * {
         width: 50%;
+    }
+    #landing-screen p {
+        padding: 0.5rem 1rem 1rem 2rem;
     }
 
     #quiz-grid-question {

@@ -539,9 +539,5 @@ Explanations for the Sohcahtoa memnomic were taken from <a href="https://calcwor
 <a href="assets/images/questions/question10.png">Trigonometry Diagram 10</a> taken from <a href="https://www.justinmath.com/trigonometric-functions/">Justin Math</a>
 <br>
 
-### Code
-- The button hover animations for the menu buttons and logo buttons taken from <a href="https://github.com/IanLunn/Hover">Hover</a> by <a href="https://github.com/IanLunn">Ian Lunn</a> on GitHub.
-<br>
-
 ## Acknowledgements
 I would like to thank my mentor Simen Dehlin for his mentorship throughout the project. I would also like to thank Mo and Mike Sheehan, the cohort mentor and facilitator for helping out wherever I had any questions. Lastly, thanks to all my friends and family who were happy to help out with the device testing.

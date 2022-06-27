@@ -244,9 +244,15 @@ This website consists of 1 page, with 4 sections:
 ## Testing
 ### HTML Validation
 The W3C validation service was used to validate the html of the webpage. No errors were detected.
-<details><summary>HTML Validation</summary>
+<details><summary>index.html Validation</summary>
     <figure>
         <img src="docs/testing/html-testing.png"
+            alt="Webpage HTML validation">
+    </figure>
+</details>
+<details><summary>404.html Validation</summary>
+    <figure>
+        <img src="docs/testing/html-testing-404.png"
             alt="Webpage HTML validation">
     </figure>
 </details>
@@ -264,9 +270,15 @@ The W3C Jigsaw CSS validation service is used to validate the sites CSS styling.
 
 ### Accessibility
 The WAVE WebAIM web accessibility evaluation tool is used to ensure the site has no accesibility or contrast errors.
-<details><summary>Accessibility</summary>
+<details><summary>index.html Accessibility</summary>
     <figure>
         <img src="docs/testing/accessibility-testing.png"
+            alt="Webpage Accessibility">
+    </figure>
+</details>
+<details><summary>404.html Accessibility</summary>
+    <figure>
+        <img src="docs/testing/accessibility-testing-404.png"
             alt="Webpage Accessibility">
     </figure>
 </details>

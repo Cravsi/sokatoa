@@ -253,7 +253,9 @@ This website consists of 1 page, with 4 sections:
 </figure>
 
 ### Future Features
-
+ - An interactive right angle triangle to demostrate the effects changing the triangle properties has.
+ - An introduction to the unit circle.
+ - A section and quiz where the user can learn about wave functions.
 <br>
 
 ## Testing

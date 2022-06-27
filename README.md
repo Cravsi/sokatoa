@@ -306,25 +306,40 @@ Google Lighthouse, found in Google Chrome Dev tools was used to test the perform
 <br>
 
 ### Local Testing
-- Logo
-
-- Header & Navigation Bar
-
-- Blurb
-
-- Information Section 
-
-- Gallery
-
-- Contact Form
-
+- Header & Logo
+    - Logo and site title remain clearly visible down to a screen width of 200px.
+    - Logo link to reload page functions as expected.
+- Landing Section
+    - Landing section scaling remains functional down to a minimum screen width of 190px.
+    - Images and text are clearly seperated and legible at all screen widths.
+    - Navigational button works as expected.
+- Learn Section 
+    - Landing section scaling remains functional down to a minimum screen width of 230px.
+    - Images and text are clearly seperated and legible at all screen widths.
+    - Navigational buttons works as expected.
+- Quiz Section
+    - Initial quiz section scaling remains functional down to a minimum screen width of 200px.
+    - During the quiz; quiz section scaling remains functional down to a minimum screen width of 230px.
+    - After the quiz; quiz section scaling remains functional down to a minimum screen width of 230px.
+    - Timer works as expected - Begins when the 'begin' button clicked, stopped when the final question is answered.
+    - Score keeper works as expected.
+    - Option selection buttons work as expected.
+    - Next question button and question resetting works as expected.
+    - Review button becoming available upon completion of the quiz works as expected.
+- Review Section
+    - Review section scaling remains functional down to a minimum screen width of 180px.
+    - Score and Time display works as expected.
+    - Reset quiz button works as expected.
 - Footer
+    - Footer scaling remains functional down to a minimum screen-width of 180px.
+    - All social media link work as expected.
 
 
 <details><summary>Fixes after local testing.</summary>
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
+| During the quiz differing image sizes can cause the option buttons to jump around | ----------- |
 
 
 

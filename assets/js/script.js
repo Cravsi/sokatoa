@@ -130,7 +130,7 @@ function resetQuestionArea() {
 function setQuestion(question) {
     quizQuestion.innerHTML = question.trigQuestion;
     quizImage.setAttribute('src', question.trigImage);
-    let shuffleOptions = question.trigOptions.sort(() => Math.floor(Math.random() * 4));
+    let shuffleOptions = question.trigOptions.sort(() => Math.floor(Math.random() * question.trigOptions.length));
 
     shuffleOptions.forEach(option => {
         const newButton = document.createElement('button');

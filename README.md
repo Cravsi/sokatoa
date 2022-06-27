@@ -371,6 +371,7 @@ The website performed well on all these browsers. No unexpected errors were foun
 ## Bugs
 | **Bug** | **Fix** |
 | ----------- | ----------- |
+| Question options weren't set in a random order | Random number for option shuffler set to length of option array |
 
 <br>
 
@@ -419,7 +420,7 @@ A copy of the original repository can be created by forking it. This will allow 
 
 #### Clone
 Cloning a repo allows you to make local changes to the repository before committing and pushing them to the remote.
-
+z
 1. From within the repo you want to clone click the dropdown **Code** button.
 2. Click on the clipboard icon to copy the URL.
 3. In Git Bash, navigate to the working directory you want to place the clone.

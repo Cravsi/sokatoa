@@ -372,6 +372,7 @@ The website performed well on all these browsers. No unexpected errors were foun
 | **Bug** | **Fix** |
 | ----------- | ----------- |
 | Question options weren't set in a random order | Random number for option shuffler set to length of option array |
+| Question asked for 'x' when 'q' is shown on image | All questions reviewed to match question to image |
 
 <br>
 

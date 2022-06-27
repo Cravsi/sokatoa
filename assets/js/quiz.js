@@ -8,43 +8,43 @@ const trigQuestions = [{
     trigImage: "assets/images/questions/question2.png",
     trigAnswer: "adjacent",
     trigOptions: ["opposite", "adjacent", "hypotenuse"],
-    trigQuestion: "What is the name of the missing side of the triangle?"
+    trigQuestion: "What is the name of the missing side of the triangle 'y'?"
 },
 {
     trigImage: "assets/images/questions/question3.png",
     trigAnswer: "hypotenuse",
     trigOptions: ["opposite", "adjacent", "hypotenuse"],
-    trigQuestion: "What is the name of the missing side of the triangle?"
+    trigQuestion: "What is the name of the missing side of the triangle 'p'?"
 },
 {
     trigImage: "assets/images/questions/question4.png",
     trigAnswer: "tan",
     trigOptions: ["sin", "cos", "tan"],
-    trigQuestion: "What is the correct trigonometric funtion?"
+    trigQuestion: "What is the correct trigonometric funtion to find angle 'z'?"
 },
 {
     trigImage: "assets/images/questions/question5.webp",
     trigAnswer: "sin",
     trigOptions: ["sin", "cos", "tan"],
-    trigQuestion: "What is the correct trigonometric funtion to find angle 'x'?"
+    trigQuestion: "What is the correct trigonometric funtion to find angle 'q?"
 },
 {
     trigImage: "assets/images/questions/question6.png",
     trigAnswer: "cos",
     trigOptions: ["sin", "cos", "tan"],
-    trigQuestion: "What is the correct trigonometric funtion to find angle theta?"
+    trigQuestion: "What is the correct trigonometric funtion to find angle 'theta'?"
 },
 {
     trigImage: "assets/images/questions/question7.png",
     trigAnswer: "sin",
     trigOptions: ["sin", "cos", "tan"],
-    trigQuestion: "What is the correct trigonometric funtion to find angle theta?"
+    trigQuestion: "What is the correct trigonometric funtion to find angle 'theta'?"
 },
 {
     trigImage: "assets/images/questions/question8.png",
     trigAnswer: "opposite",
     trigOptions: ["opposite", "adjacent", "hypotenuse"],
-    trigQuestion: "Which side is needed to calculate the angle with Sin?"
+    trigQuestion: "Which side is needed to calculate the angle with the 'Sin' function?"
 },
 {
     trigImage: "assets/images/questions/question9.png",
@@ -56,5 +56,5 @@ const trigQuestions = [{
     trigImage: "assets/images/questions/question10.png",
     trigAnswer: "cos",
     trigOptions: ["sin", "cos", "tan"],
-    trigQuestion: "What is the correct trigonometric funtion to find angle theta?"
+    trigQuestion: "What is the correct trigonometric funtion to find angle 'theta'?"
 }];

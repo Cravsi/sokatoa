@@ -291,13 +291,13 @@ The WAVE WebAIM web accessibility evaluation tool is used to ensure the site has
 Google Lighthouse, found in Google Chrome Dev tools was used to test the performance of the site.
 <details><summary>Lighthouse Desktop Performance</summary>
     <figure>
-        <img src=""
+        <img src="docs/assets/performance-desktop-testing.png"
             alt="Desktop Performance">
     </figure>
 </details>
 <details><summary>Lighthouse Mobile Performance</summary>
     <figure>
-        <img src=""
+        <img src="docs/assets/performance-mobile-testing.png"
             alt="Mobile Performance">
     </figure>
 </details>
@@ -309,7 +309,7 @@ Google Lighthouse, found in Google Chrome Dev tools was used to test the perform
 - Header & Navigation Bar
 
 - Blurb
-.
+
 - Information Section 
 
 - Gallery

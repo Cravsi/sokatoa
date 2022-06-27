@@ -261,27 +261,27 @@ This website consists of 1 page, with 4 sections:
 The W3C validation service was used to validate the html of the webpage. No errors were detected.
 <details><summary>HTML Validation</summary>
     <figure>
-        <img src=""
+        <img src="docs/testing/html-testing.png"
             alt="Webpage HTML validation">
     </figure>
 </details>
 <br>
 
 ### CSS Validation
-The W3C Jigsaw CSS validation service is used to validate the sites CSS styling. No errors were found.
+The W3C Jigsaw CSS validation service is used to validate the sites CSS styling.
 <details><summary>CSS Validation</summary>
     <figure>
-        <img src=""
+        <img src="docs/testing/css-testing.png"
             alt="Webpage CSS validation">
     </figure>
 </details>
 <br>
 
 ### Accessibility
-The WAVE WebAIM web accessibility evaluation tool is used to ensure each page is highly accessible.
+The WAVE WebAIM web accessibility evaluation tool is used to ensure the site has no accesibility or contrast errors.
 <details><summary>Accessibility</summary>
     <figure>
-        <img src=""
+        <img src="docs/testing/accessibility-testing.png"
             alt="Webpage Accessibility">
     </figure>
 </details>

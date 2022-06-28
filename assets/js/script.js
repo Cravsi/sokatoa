@@ -81,7 +81,7 @@ function startQuiz() {
     beginButton.classList.add('hide');
     quizContainer.classList.remove('hide');
 
-    shuffledQuestions = trigQuestions.sort(() => Math.random() - 0.5);
+    shuffledQuestions = shuffle(trigQuestions);
     currentQuestionIndex = 0;
 
     nextQuestion();
@@ -108,20 +108,6 @@ function nextQuestion() {
 }
 
 /**
- * Removes options from previous question. Prevents user selecting 
- * multiple options on the one question.
- */
-function resetQuestionArea() {
-    if (quizQuestionContainer.hasAttribute('chosen')) {
-        quizQuestionContainer.removeAttribute('chosen');
-    }
-
-    while (quizQuestionContainer.firstChild) {
-        quizQuestionContainer.removeChild(quizQuestionContainer.firstChild);
-    }
-}
-
-/**
  * Sets the question provided in the quiz screen section. Options from each question
  * object are shuffled and a button is created for each option. The "correct" dataset
  * is added to the correct option.
@@ -130,8 +116,8 @@ function resetQuestionArea() {
 function setQuestion(question) {
     quizQuestion.innerHTML = question.trigQuestion;
     quizImage.setAttribute('src', question.trigImage);
-    let shuffleOptions = question.trigOptions.sort(() => Math.floor(Math.random() * question.trigOptions.length));
 
+    let shuffleOptions = shuffle(question.trigOptions);
     shuffleOptions.forEach(option => {
         const newButton = document.createElement('button');
         newButton.innerHTML = option;
@@ -149,8 +135,22 @@ function setQuestion(question) {
 }
 
 /**
+ * Removes options from previous question. Prevents user selecting 
+ * multiple options on the one question.
+ */
+ function resetQuestionArea() {
+    if (quizQuestionContainer.hasAttribute('chosen')) {
+        quizQuestionContainer.removeAttribute('chosen');
+    }
+
+    while (quizQuestionContainer.firstChild) {
+        quizQuestionContainer.removeChild(quizQuestionContainer.firstChild);
+    }
+}
+
+/**
  * Handles quiz response when question is answered. 
- * @param {*} event 
+ * @param {HTMLevent} event 
  */
 function checkAnswer(event) {
     let selectedButton = event.target;
@@ -165,6 +165,13 @@ function checkAnswer(event) {
         quizQuestionContainer.setAttribute('chosen', '');
         nextButton.classList.remove('hide');
     }
+}
+
+/**
+ * Increments the score when a correct answer is selected
+ */
+function incrementScore() {
+    document.querySelector('#score').innerHTML = `${++score}/10`;
 }
 
 /**
@@ -189,12 +196,11 @@ function startTimer() {
     }, 1000);
 }
 
+/**
+ * Stop the quiz timer
+ */
 function stopTimer() {
     clearTimeout(t);
-}
-
-function incrementScore() {
-    document.querySelector('#score').innerHTML = `${++score}/10`;
 }
 
 /**
@@ -226,4 +232,26 @@ function quizReset() {
     beginButton.classList.remove('hide');
     quizContainer.classList.add('hide');
     goToPage('review-back');
+}
+
+/**
+ * Standard Fischer-Yates shuffle
+ * @param {array} array 
+ * @returns {array} shuffled array
+ */
+ function shuffle(options) {
+    let currentIndex = options.length;
+    let temporaryValue;
+    let randomIndex;
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+        // And swap it with the current element.
+        temporaryValue = options[currentIndex];
+        options[currentIndex] = options[randomIndex];
+        options[randomIndex] = temporaryValue;
+    }
+    return options;
 }

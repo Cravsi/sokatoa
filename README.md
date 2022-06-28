@@ -269,6 +269,22 @@ The W3C Jigsaw CSS validation service is used to validate the sites CSS styling.
 </details>
 <br>
 
+### JavaScript Validation
+The JSHint Static Code Analysis Tool was used to validate the sites JavaScript files.
+<details><summary>quiz.js JSHint validation</summary>
+    <figure>
+        <img src="docs/testing/jshint-quiz-testing.png"
+            alt="quiz.js JSHint validation">
+    </figure>
+</details>
+<details><summary>script.js JSHint validation</summary>
+    <figure>
+        <img src="docs/testing/jshint-script-testing.png"
+            alt="quiz.js JSHint validation">
+    </figure>
+</details>
+<br>
+
 ### Accessibility
 The WAVE WebAIM web accessibility evaluation tool is used to ensure the site has no accesibility or contrast errors.
 <details><summary>index.html Accessibility</summary>

@@ -20,13 +20,12 @@ let scoreReview = document.querySelector('#score-review');
 let timeReview = document.getElementById('time-review');
 let timer = document.querySelector('#timer');
 let time = 0;
-let t
+let t;
 let shuffledQuestions;
 let currentQuestionIndex;
 
 /**
  * Nav button event listeners
- * @param {object} navButtons
  */
 navButtons.forEach(button => {
     button.addEventListener('click', function (event) {
@@ -126,6 +125,7 @@ function resetQuestionArea() {
  * Sets the question provided in the quiz screen section. Options from each question
  * object are shuffled and a button is created for each option. The "correct" dataset
  * is added to the correct option.
+ * @param {object} question
  */
 function setQuestion(question) {
     quizQuestion.innerHTML = question.trigQuestion;
@@ -174,7 +174,7 @@ function checkAnswer(event) {
 function startTimer() {
     let seconds;
     let minutes;
-    time++
+    time++;
 
     t = setTimeout(function () {
         minutes = parseInt(time / 60, 10);
